@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorkMerate - Smart. Secure. Simplified.</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shared-nav-footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,62 +14,254 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="navbar-container">
-            <div class="logo">
-                <img src="./assets/Logo.png" alt="WorkMerate Logo">
-            </div>
-            <div class="nav-menu">
-                <a href="agentic-ai.html" class="nav-item">Agentic AI</a>
-                <button class="nav-item dropdown">Services <span class="chevron">▼</span></button>
-                <button class="nav-item dropdown">Modules <span class="chevron">▼</span></button>
-                <a href="#" class="nav-item">Pricing</a>
-                <button class="nav-item dropdown">Resources <span class="chevron">▼</span></button>
-                <a href="#" class="nav-item">About us</a>
-            </div>
-            <div class="nav-actions">
-                <button class="btn-outline">Login</button>
-                <a href="#" class="btn-primary">Try it Free</a>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <img src="https://www.figma.com/api/mcp/asset/2a1ccee0-31d9-409a-a342-71ceb71bf00e" alt="Menu" class="menu-icon">
-                <img src="https://www.figma.com/api/mcp/asset/2a1ccee0-31d9-409a-a342-71ceb71bf00e" alt="Close" class="close-icon" style="display: none;">
-            </button>
-        </div>
-    </nav>
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo">
+          <img src="./assets/brand-logo.png" alt="brand-logo" />
+        </a>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-        <div class="mobile-menu-drawer">
-            <div class="mobile-menu-header">
-                <div class="logo">
-                    <img src="https://www.figma.com/api/mcp/asset/9fa805de-8958-4b69-bea6-938e17237f64" alt="WorkMerate Logo">
-                </div>
-                <button class="mobile-menu-close" aria-label="Close menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+        <ul class="nav-menu desktop-only">
+          <li><a href="agentic-ai.html" class="nav-link">Agentic AI</a></li>
+          <li class="nav-item has-dropdown">
+            <a
+              href="services.html"
+              class="nav-link"
+              aria-haspopup="true"
+            >
+              Services
+              <svg
+                class="chevron"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown">
+              <p class="dropdown-title">Services</p>
+              <ul class="dropdown-list two-col">
+                <li><a href="services.html">Tax Automation</a></li>
+                <li><a href="services.html">Compliance</a></li>
+                <li><a href="erp-pos.html">ERP &amp; POS Integrations</a></li>
+                <li>
+                  <a href="ar-reporting.html"
+                    >Audit &amp; Regulatory Reporting</a
+                  >
+                </li>
+                <li><a href="ar-advisory.html">Advisory &amp; Risk</a></li>
+                <li>
+                  <a href="regulatory-engagement.html">Regulatory Engagement</a>
+                </li>
+                <li><a href="managed.html">Managed Services</a></li>
+                <li>
+                  <a href="advanced-intelligence.html">Advanced Intelligence</a>
+                </li>
+              </ul>
             </div>
-            <nav class="mobile-menu-nav">
-                <a href="agentic-ai.html" class="mobile-nav-item">Agentic AI</a>
-                <button class="mobile-nav-item mobile-dropdown">
-                    Services <span class="chevron">▼</span>
-                </button>
-                <button class="mobile-nav-item mobile-dropdown">
-                    Modules <span class="chevron">▼</span>
-                </button>
-                <a href="#" class="mobile-nav-item">Pricing</a>
-                <button class="mobile-nav-item mobile-dropdown">
-                    Resources <span class="chevron">▼</span>
-                </button>
-                <a href="#" class="mobile-nav-item">About us</a>
-            </nav>
-            <div class="mobile-menu-actions">
-                <button class="btn-outline mobile-btn">Login</button>
-                <a href="#" class="btn-primary mobile-btn">Try it Free</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="custom-modules.html" class="nav-link" aria-haspopup="true">
+              Modules
+              <svg
+                class="chevron"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown">
+              <p class="dropdown-title">Modules</p>
+              <ul class="dropdown-list two-col">
+                <li><a href="hr.html">Human Resources Management</a></li>
+                <li>
+                  <a href="financial-management.html">Financial Management</a>
+                </li>
+                <li><a href="#">Marketing Automation</a></li>
+                <li><a href="tax-management.html">Tax Management</a></li>
+                <li>
+                  <a href="project-management.html">Project Management</a>
+                </li>
+                <li>
+                  <a href="productivity-management.html"
+                    >Productivity Management</a
+                  >
+                </li>
+                <li>
+                  <a href="sc-management.html">Supply Chain Management</a>
+                </li>
+                <li>
+                  <a href="custom-modules.html">Custom-Module Management</a>
+                </li>
+              </ul>
             </div>
+          </li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="learning.html" class="nav-link" aria-haspopup="true">
+              Resources
+              <svg
+                class="chevron"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown">
+              <p class="dropdown-title">Resources</p>
+              <ul class="dropdown-list one-col">
+                <li>
+                  <a href="compliance-calculator.html"
+                    >Compliance Loss Calculator</a
+                  >
+                </li>
+                <li><a href="tax-laws.html">Tax Laws</a></li>
+                <li><a href="state-irs.html">State IRS</a></li>
+                <li><a href="learning.html">Learning</a></li>
+                <li><a href="tax-calendar.html">Tax Calendar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="about.html" class="nav-link">About us</a></li>
+        </ul>
+
+        <div class="nav-actions desktop-only">
+          <a href="#" class="login-link">Login</a>
+          <a href="#" class="btn-nav">Try it Free</a>
         </div>
-    </div>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div
+          class="mobile-panel mobile-panel-main is-active"
+          id="mobileMainPanel"
+        >
+          <a href="agentic-ai.html" class="mobile-link">Agentic AI</a>
+          <button
+            class="mobile-link mobile-trigger"
+            type="button"
+            data-panel="servicesPanel"
+          >
+            Services <span class="mobile-arrow">→</span>
+          </button>
+          <button
+            class="mobile-link mobile-trigger"
+            type="button"
+            data-panel="modulesPanel"
+          >
+            Modules <span class="mobile-arrow">→</span>
+          </button>
+          <a href="pricing.html" class="mobile-link">Pricing</a>
+          <button
+            class="mobile-link mobile-trigger"
+            type="button"
+            data-panel="resourcesPanel"
+          >
+            Resources <span class="mobile-arrow">→</span>
+          </button>
+          <a href="about.html" class="mobile-link">About us</a>
+          <div class="mobile-actions-wrapper">
+            <a href="#" class="btn-nav full-width">Try it Free</a>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" id="servicesPanel">
+          <div class="mobile-subheader">
+            <button class="mobile-back" type="button" data-back>←</button>
+            <span>Services</span>
+          </div>
+          <a href="services.html" class="mobile-sublink"
+            >Tax Automation &amp; Compliance</a
+          >
+          <a href="erp-pos.html" class="mobile-sublink"
+            >ERP &amp; POS Integrations</a
+          >
+          <a href="ar-reporting.html" class="mobile-sublink"
+            >Audit &amp; Regulatory Reporting</a
+          >
+          <a href="ar-advisory.html" class="mobile-sublink"
+            >Advisory &amp; Risk</a
+          >
+          <a href="regulatory-engagement.html" class="mobile-sublink"
+            >Regulatory Engagement</a
+          >
+          <a href="managed.html" class="mobile-sublink active"
+            >Managed Services</a
+          >
+          <a href="advanced-intelligence.html" class="mobile-sublink"
+            >Advanced Intelligence</a
+          >
+          <div class="mobile-actions-wrapper">
+            <a href="#" class="btn-nav full-width">Try it Free</a>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" id="modulesPanel">
+          <div class="mobile-subheader">
+            <button class="mobile-back" type="button" data-back>←</button>
+            <span>Modules</span>
+          </div>
+          <a href="hr.html" class="mobile-sublink"
+            >Human Resources Management</a
+          >
+          <a href="financial-management.html" class="mobile-sublink"
+            >Financial Management</a
+          >
+          <a href="#" class="mobile-sublink">Marketing Automation</a>
+          <a href="tax-management.html" class="mobile-sublink"
+            >Tax Management</a
+          >
+          <a href="project-management.html" class="mobile-sublink"
+            >Project Management</a
+          >
+          <a href="productivity-management.html" class="mobile-sublink"
+            >Productivity Management</a
+          >
+          <a href="sc-management.html" class="mobile-sublink"
+            >Supply Chain Management</a
+          >
+          <a href="custom-modules.html" class="mobile-sublink"
+            >Custom Module Development</a
+          >
+          <div class="mobile-actions-wrapper">
+            <a href="#" class="btn-nav full-width">Try it Free</a>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" id="resourcesPanel">
+          <div class="mobile-subheader">
+            <button class="mobile-back" type="button" data-back>←</button>
+            <span>Resources</span>
+          </div>
+          <a href="compliance-calculator.html" class="mobile-sublink"
+            >Compliance Loss Calculator</a
+          >
+          <a href="tax-laws.html" class="mobile-sublink">Tax Laws</a>
+          <a href="tax-calendar.html" class="mobile-sublink">Tax Calendar</a>
+          <a href="state-irs.html" class="mobile-sublink">State IRS</a>
+          <a href="learning.html" class="mobile-sublink">Learning</a>
+          <div class="mobile-actions-wrapper">
+            <a href="#" class="btn-nav full-width">Try it Free</a>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -362,107 +555,124 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-logo-section">
-                    <div class="footer-logo">
-                        <img src="https://www.figma.com/api/mcp/asset/87a8d34e-978e-4e51-b04c-2609a2ee416b" alt="WorkMerate Logo">
-                        <p class="footer-tagline">Smart. Secure. Simplified.</p>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <p class="contact-label">USA Customer Support:</p>
-                            <p class="contact-value">(+1) 256 441 3090</p>
-                        </div>
-                        <div class="contact-item">
-                            <p class="contact-label">NGA Customer Support:</p>
-                            <p class="contact-value">(+234) 907 713 7167; 0803 601 4972</p>
-                        </div>
-                        <div class="contact-item">
-                            <p class="contact-label">Email:</p>
-                            <p class="contact-value">support@workmeraterp.ng.com</p>
-                        </div>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><img src="https://www.figma.com/api/mcp/asset/32610f81-1a3d-40f1-94d4-62d103a667f1" alt="Facebook"></a>
-                        <a href="#"><img src="https://www.figma.com/api/mcp/asset/1c6f4b80-75ad-4052-93a6-d697d74ba76e" alt="Twitter"></a>
-                        <a href="#"><img src="https://www.figma.com/api/mcp/asset/1e4d3b30-f7b5-4d5f-b8ee-c2b49550b0a5" alt="LinkedIn"></a>
-                        <a href="#"><img src="https://www.figma.com/api/mcp/asset/d1653e09-8d35-4792-8429-101f70359706" alt="Instagram"></a>
-                        <a href="#"><img src="https://www.figma.com/api/mcp/asset/8094ab1b-b98f-49ca-b802-fd8830197458" alt="TikTok"></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-link-group">
-                        <h5 class="footer-link-title">Services</h5>
-                        <ul class="footer-link-list">
-                            <li><a href="#">Tax Automation</a></li>
-                            <li><a href="#">ERP Integration</a></li>
-                            <li><a href="#">Regulatory Reporting</a></li>
-                            <li><a href="#">Advisory & Strategy</a></li>
-                            <li><a href="#">Regulatory Engagement</a></li>
-                            <li><a href="#">Agentic AI</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-link-group">
-                        <h5 class="footer-link-title">Modules</h5>
-                        <ul class="footer-link-list">
-                            <li><a href="#">Human Resources</a></li>
-                            <li><a href="#">Financial Management</a></li>
-                            <li><a href="#">Tax Management</a></li>
-                            <li><a href="#">Marketing Automation</a></li>
-                            <li><a href="#">Project Management</a></li>
-                            <li><a href="#">Productivity</a></li>
-                            <li><a href="#">Supply Chain</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-link-group">
-                        <h5 class="footer-link-title">Resources</h5>
-                        <ul class="footer-link-list">
-                            <li><a href="#">Compliance Loss Calculator</a></li>
-                            <li><a href="#">State IRS</a></li>
-                            <li><a href="#">Tax Laws</a></li>
-                            <li><a href="#">Tax Calendar</a></li>
-                            <li><a href="#">Learning</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-link-group">
-                        <h5 class="footer-link-title">Other Links</h5>
-                        <ul class="footer-link-list">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Cookies Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <img src="./assets/brand-logo.png" alt="brand-logo" />
+            </a>
+            <p class="tagline">Smart. Secure. Simplified.</p>
+            <div class="contact-details">
+              <p>
+                <strong>USA Customer Support:</strong><br />(+1) 256 441 3090
+              </p>
+              <p>
+                <strong>NGA Customer Support:</strong><br />(+234) 907 713 7167
+              </p>
+              <p><strong>Email:</strong><br />support@workmerate.ng.com</p>
             </div>
-            <div class="footer-divider"></div>
-            <div class="footer-newsletter">
-                <div class="newsletter-text">
-                    <h3 class="newsletter-title">Subscribe to our newsletter</h3>
-                    <p class="newsletter-description">Stay informed with the latest news, updates, and resources from WorkMerate, sent directly to your inbox.</p>
-                </div>
-                <div class="newsletter-form">
-                    <div class="newsletter-input">
-                        <img src="https://www.figma.com/api/mcp/asset/5b2f99c2-e9d5-47ac-b294-5ed2394f7b25" alt="Email" class="email-icon">
-                        <input type="email" placeholder="Enter your email">
-                    </div>
-                    <button class="btn-primary">Subscribe</button>
-                </div>
+            <div class="footer-socials" aria-label="Social links">
+              <a href="#" class="social-icon" aria-label="Facebook">f</a>
+              <a href="#" class="social-icon" aria-label="X">x</a>
+              <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+              <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+              <a href="#" class="social-icon" aria-label="TikTok">t</a>
             </div>
-            <div class="footer-divider"></div>
-            <div class="footer-bottom">
-                <p class="copyright">© 2025 WorkMerate - All rights reserved</p>
-                <div class="footer-badges">
-                    <img src="https://www.figma.com/api/mcp/asset/012f0eb0-02aa-449c-95fa-abe8d8b2a847" alt="ISO Badge">
-                    <img src="https://www.figma.com/api/mcp/asset/185724ab-c13c-485d-90d6-feeccac782d4" alt="NDPC Nigeria">
-                    <img src="https://www.figma.com/api/mcp/asset/71bb032b-2825-418f-8832-76db3904ad67" alt="Badge">
-                </div>
+          </div>
+          <div class="footer-links-grid">
+            <div>
+              <h4>Services</h4>
+              <ul>
+                <li><a href="services.html">Tax Automation</a></li>
+                <li><a href="erp-pos.html">ERP Integration</a></li>
+                <li><a href="ar-reporting.html">Regulatory Reporting</a></li>
+                <li><a href="ar-advisory.html">Advisory &amp; Strategy</a></li>
+                <li>
+                  <a href="regulatory-engagement.html">Regulatory Engagement</a>
+                </li>
+                <li><a href="agentic-ai.html">Agentic AI</a></li>
+              </ul>
             </div>
+            <div>
+              <h4>Modules</h4>
+              <ul>
+                <li><a href="hr.html">Human Resources</a></li>
+                <li>
+                  <a href="financial-management.html">Financial Management</a>
+                </li>
+                <li><a href="tax-management.html">Tax Management</a></li>
+                <li><a href="#">Marketing Automation</a></li>
+                <li>
+                  <a href="project-management.html">Project Management</a>
+                </li>
+                <li><a href="productivity-management.html">Productivity</a></li>
+                <li><a href="sc-management.html">Supply Chain</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Resources</h4>
+              <ul>
+                <li>
+                  <a href="compliance-calculator.html"
+                    >Compliance Loss Calculator</a
+                  >
+                </li>
+                <li><a href="state-irs.html">State IRS</a></li>
+                <li><a href="tax-laws.html">Tax Laws</a></li>
+                <li><a href="tax-calendar.html">Tax Calendar</a></li>
+                <li><a href="learning.html">Learning</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Other Links</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li>
+                  <a href="terms-and-condition.html">Terms and Conditions</a>
+                </li>
+                <li><a href="cookie-policy.html">Cookies Policy</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <hr />
+        <div class="footer-newsletter">
+          <div class="nl-header">
+            <h2>Subscribe to our newsletter</h2>
+          </div>
+          <div class="nl-text">
+            <p>
+              Stay informed with the latest news, updates, and resources from
+              WorkMerate, sent directly to your inbox.
+            </p>
+          </div>
+          <div class="nl-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn-dark">Subscribe</button>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="badges">
+            <p>&copy; 2025 WorkMerate - All rights reserved</p>
+            <div class="brand-logos">
+              <img src="./assets/brands/quality-assurance.png" alt="Quality Assurance" />
+              <img src="./assets/brands/environmental-management.png" alt="Environmental Management" />
+              <img src="./assets/brands/occu-health-safety.png" alt="Occupational Health Safety" />
+              <img src="./assets/brands/info-security-manage.png" alt="Information Security Management" />
+              <img src="./assets/brands/NDPC-Nigeria.png" alt="NCPC Nigeria" />
+              <img src="./assets/brands/NITDA.png" alt="National Information Technology Agency" />
+            </div>
+          </div>
+          <div class="ai-logo">
+            <img src="./assets/brands/chat-ai.png" alt="">
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Floating Chatbot -->
@@ -470,68 +680,44 @@
         <img src="https://www.figma.com/api/mcp/asset/74ad8a23-0196-40ce-ba62-e0fbe602c984" alt="AI Chatbot">
     </div>
 
-    <script>
-        // Mobile Menu Toggle Functionality
-        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-        const mobileMenuClose = document.querySelector('.mobile-menu-close');
-        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+    
 
-        // Toggle menu open
-        mobileMenuToggle.addEventListener('click', function(e) {
-            e.stopPropagation();
-            mobileMenuOverlay.classList.add('active');
-            mobileMenuToggle.classList.add('active');
-            document.body.classList.add('menu-open'); // Prevent body scroll when menu is open
-        });
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
 
-        // Close menu when clicking close button
-        if (mobileMenuClose) {
-            mobileMenuClose.addEventListener('click', function(e) {
-                e.stopPropagation();
-                closeMobileMenu();
-            });
-        }
+  const mobilePanels = document.querySelectorAll(".mobile-panel");
+  const mobileMainPanel = document.getElementById("mobileMainPanel");
 
-        // Close menu when clicking overlay (outside the drawer)
-        mobileMenuOverlay.addEventListener('click', function(e) {
-            if (e.target === mobileMenuOverlay) {
-                closeMobileMenu();
-            }
-        });
+  const setActivePanel = (panelId) => {
+    mobilePanels.forEach((panel) => panel.classList.remove("is-active"));
+    const nextPanel = document.getElementById(panelId);
+    (nextPanel || mobileMainPanel).classList.add("is-active");
+  };
 
-        // Close menu when clicking on a nav item (link)
-        mobileNavItems.forEach(item => {
-            if (item.tagName === 'A') {
-                item.addEventListener('click', function() {
-                    closeMobileMenu();
-                });
-            }
-        });
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      mobileMenu.classList.toggle("open");
+      if (!mobileMenu.classList.contains("open")) {
+        setActivePanel("mobileMainPanel");
+      }
+    });
+  }
 
-        // Close menu function
-        function closeMobileMenu() {
-            mobileMenuOverlay.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
-            document.body.classList.remove('menu-open'); // Restore body scroll
-        }
+  document.querySelectorAll(".mobile-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      setActivePanel(trigger.dataset.panel);
+    });
+  });
 
-        // Close menu on escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
-                closeMobileMenu();
-            }
-        });
-
-        // Handle dropdown toggles in mobile menu (optional enhancement)
-        const mobileDropdowns = document.querySelectorAll('.mobile-dropdown');
-        mobileDropdowns.forEach(dropdown => {
-            dropdown.addEventListener('click', function(e) {
-                e.preventDefault();
-                // You can add dropdown functionality here if needed
-                // For now, it just prevents default behavior
-            });
-        });
-    </script>
+  document.querySelectorAll("[data-back]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setActivePanel("mobileMainPanel");
+    });
+  });
+</script>
 </body>
 </html>
+
+
