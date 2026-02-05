@@ -269,12 +269,6 @@
   border-bottom: 1px solid #1d1d1d;
 }
 
-.mobile-link,
-.mobile-sublink,
-.mobile-actions-wrapper .login-link {
-  color: #f1f1f1 !important;
-}
-
 .mobile-sublink:hover,
 .mobile-sublink.active {
   background-color: #1a1a1a;
@@ -636,6 +630,5 @@ ul {
 }
 
 a {
-  text-decoration: none !important;
-  color: inherit !important;
+  text
 }

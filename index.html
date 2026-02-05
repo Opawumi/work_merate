@@ -675,6 +675,95 @@
       </div>
     </footer>
 
+    <div class="consent-banner consent-hidden" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+      <div class="consent-banner__content">
+        <div class="consent-banner__text">
+          <h3>We value your privacy</h3>
+          <p>
+            We use cookies to help you navigate efficiently and personalize your experience.
+            By clicking Accept All, you consent to our use of cookies. Read our
+            <a href="cookie-policy.html">Cookie Policy</a>.
+          </p>
+        </div>
+        <div class="consent-banner__actions">
+          <button class="consent-btn consent-btn--outline" id="cookieCustomize">Customize</button>
+          <button class="consent-btn consent-btn--outline" id="cookieReject">Reject All</button>
+          <button class="consent-btn consent-btn--solid" id="cookieAccept">Accept All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="consent-overlay consent-hidden" id="cookieModal" role="dialog" aria-modal="true" aria-label="Customise Consent Preferences">
+      <div class="consent-modal">
+        <button class="consent-close" id="cookieModalClose" aria-label="Close">×</button>
+        <h2>Customise Consent Preferences</h2>
+        <div class="consent-modal__body">
+          <p class="consent-intro">
+            We use cookies to help you navigate efficiently and perform certain functions.
+            You will find detailed information about all cookies under each consent category below.
+            The cookies that are categorized as "Necessary" are stored on your browser as they are
+            essential for enabling the basic functionality.
+          </p>
+
+          <div class="consent-list">
+            <div class="consent-item">
+              <div>
+                <h4>Necessary</h4>
+                <p>
+                  Necessary cookies are required to enable the basic features of this site,
+                  such as providing secure log-in or adjusting your consent preferences.
+                </p>
+              </div>
+              <span class="consent-chip">Always Active</span>
+            </div>
+            <div class="consent-item">
+              <div>
+                <h4>Functional</h4>
+                <p>
+                  Functional cookies help perform certain functionalities like sharing content,
+                  collecting feedback, and other third-party features.
+                </p>
+              </div>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentFunctional" />
+                <span class="consent-slider"></span>
+              </label>
+            </div>
+            <div class="consent-item">
+              <div>
+                <h4>Analytical</h4>
+                <p>
+                  Analytical cookies are used to understand how visitors interact with the website.
+                </p>
+              </div>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentAnalytical" />
+                <span class="consent-slider"></span>
+              </label>
+            </div>
+            <div class="consent-item">
+              <div>
+                <h4>Performance</h4>
+                <p>
+                  Performance cookies are used to understand and analyze the key performance of the website.
+                </p>
+              </div>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentPerformance" />
+                <span class="consent-slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="consent-modal__actions">
+          <button class="consent-btn consent-btn--outline" id="cookieRejectModal">Reject All</button>
+          <button class="consent-btn consent-btn--outline" id="cookieSave">Save My Preferences</button>
+          <button class="consent-btn consent-btn--solid" id="cookieAcceptModal">Accept All</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Floating Chatbot -->
     <div class="floating-chatbot">
         <img src="https://www.figma.com/api/mcp/asset/74ad8a23-0196-40ce-ba62-e0fbe602c984" alt="AI Chatbot">
@@ -716,6 +805,153 @@
       setActivePanel("mobileMainPanel");
     });
   });
+</script>
+
+<script>
+  const cookieBanner = document.getElementById("cookieBanner");
+  const cookieModal = document.getElementById("cookieModal");
+  const cookieCustomize = document.getElementById("cookieCustomize");
+  const cookieReject = document.getElementById("cookieReject");
+  const cookieAccept = document.getElementById("cookieAccept");
+  const cookieRejectModal = document.getElementById("cookieRejectModal");
+  const cookieAcceptModal = document.getElementById("cookieAcceptModal");
+  const cookieSave = document.getElementById("cookieSave");
+  const cookieModalClose = document.getElementById("cookieModalClose");
+
+  const consentFunctional = document.getElementById("consentFunctional");
+  const consentAnalytical = document.getElementById("consentAnalytical");
+  const consentPerformance = document.getElementById("consentPerformance");
+
+  const CONSENT_KEY = "wm_cookie_consent_v1";
+
+  const showBanner = () => {
+    if (cookieBanner) {
+      cookieBanner.classList.remove("consent-hidden");
+    }
+  };
+
+  const hideBanner = () => {
+    if (cookieBanner) {
+      cookieBanner.classList.add("consent-hidden");
+    }
+  };
+
+  const showModal = () => {
+    if (cookieModal) {
+      cookieModal.classList.remove("consent-hidden");
+    }
+  };
+
+  const hideModal = () => {
+    if (cookieModal) {
+      cookieModal.classList.add("consent-hidden");
+    }
+  };
+
+  const saveConsent = (consent) => {
+    localStorage.setItem(CONSENT_KEY, JSON.stringify(consent));
+  };
+
+  const loadConsent = () => {
+    const saved = localStorage.getItem(CONSENT_KEY);
+    if (!saved) return null;
+    try {
+      return JSON.parse(saved);
+    } catch {
+      return null;
+    }
+  };
+
+  const applyConsentToToggles = (consent) => {
+    if (!consent) return;
+    consentFunctional.checked = !!consent.functional;
+    consentAnalytical.checked = !!consent.analytical;
+    consentPerformance.checked = !!consent.performance;
+  };
+
+  const acceptAll = () => {
+    const consent = { necessary: true, functional: true, analytical: true, performance: true };
+    saveConsent(consent);
+    hideBanner();
+    hideModal();
+  };
+
+  const rejectAll = () => {
+    const consent = { necessary: true, functional: false, analytical: false, performance: false };
+    saveConsent(consent);
+    hideBanner();
+    hideModal();
+  };
+
+  const savePreferences = () => {
+    const consent = {
+      necessary: true,
+      functional: consentFunctional.checked,
+      analytical: consentAnalytical.checked,
+      performance: consentPerformance.checked
+    };
+    saveConsent(consent);
+    hideBanner();
+    hideModal();
+  };
+
+  const initConsent = () => {
+    const saved = loadConsent();
+    if (saved) {
+      applyConsentToToggles(saved);
+      hideBanner();
+      hideModal();
+      return;
+    }
+    showBanner();
+  };
+
+  if (cookieCustomize) {
+    cookieCustomize.addEventListener("click", () => {
+      hideBanner();
+      showModal();
+      const saved = loadConsent();
+      applyConsentToToggles(saved || { functional: false, analytical: false, performance: false });
+    });
+  }
+
+  if (cookieModalClose) {
+    cookieModalClose.addEventListener("click", () => {
+      hideModal();
+      showBanner();
+    });
+  }
+
+  if (cookieModal) {
+    cookieModal.addEventListener("click", (event) => {
+      if (event.target === cookieModal) {
+        hideModal();
+        showBanner();
+      }
+    });
+  }
+
+  if (cookieAccept) {
+    cookieAccept.addEventListener("click", acceptAll);
+  }
+
+  if (cookieReject) {
+    cookieReject.addEventListener("click", rejectAll);
+  }
+
+  if (cookieAcceptModal) {
+    cookieAcceptModal.addEventListener("click", acceptAll);
+  }
+
+  if (cookieRejectModal) {
+    cookieRejectModal.addEventListener("click", rejectAll);
+  }
+
+  if (cookieSave) {
+    cookieSave.addEventListener("click", savePreferences);
+  }
+
+  initConsent();
 </script>
 </body>
 </html>

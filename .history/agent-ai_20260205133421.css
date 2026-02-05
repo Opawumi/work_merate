@@ -54,10 +54,111 @@ img {
   margin-bottom: 24px;
 }
 
+/* --- Navigation --- */
+.navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: relative;
+  z-index: 100;
+}
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+.bag-icon {
+  width: 16px;
+  height: 12px;
+  background: #000;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  margin: 0 1px;
+}
+.bag-icon::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 4px;
+  height: 4px;
+  background: var(--color-dark-green);
+  border-radius: 50%;
+}
+.nav-menu {
+  display: flex;
+  gap: 32px;
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-link.active {
+  font-weight: 700;
+  color: #000;
+  border-bottom: 2px solid var(--color-agentic-green);
+}
+.nav-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.login-link {
+  font-weight: 600;
+  font-size: 14px;
+}
+.btn-nav {
+  background: var(--color-dark-green);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 24px;
+  height: 3px;
+  background: #000;
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+.mobile-menu.open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* --- 1. Hero Section (Agentic AI) --- */
 .hero-agentic {
   position: relative;
-  background: url("./assets/hero.png") right/cover no-repeat;
+  background: ; /* Deep Green Background */
   padding: 100px 0;
   overflow: hidden;
   color: #fff;
@@ -104,7 +205,7 @@ img {
 }
 .btn-hero-primary {
   background: #fff;
-  color: var(--color-agentic-green) !important;
+  color: var(--color-agentic-green);
   padding: 16px 28px;
   border-radius: 6px;
   font-weight: 700;
@@ -265,7 +366,7 @@ img {
   border-radius: 4px;
   position: absolute;
   top: -16px;
-  left: -16px;
+  left: 24px;
 }
 .process-box h3 {
   font-size: 18px;
@@ -387,8 +488,67 @@ img {
   text-decoration: none;
 }
 
+/* --- Footer --- */
+.footer-section {
+  background: var(--color-cream-bg);
+  padding: 80px 0 30px;
+  font-size: 14px;
+  color: #333;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-links-grid {
+  display: flex;
+  gap: 60px;
+}
+.footer-links-grid h4 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.footer-links-grid a {
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+.footer-newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.nl-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+  margin-right: 10px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #777;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
+  .nav-menu,
+  .nav-actions {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -403,6 +563,7 @@ img {
   }
   .image-content {
     height: auto;
+    aspect-ratio: 16/9;
   }
 
   .grid-3,
@@ -417,19 +578,20 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .cta-banner {
-    padding: 40px 24px;
+  .footer-links-grid {
+    flex-wrap: wrap;
+    gap: 30px;
   }
-
-  .cta-actions {
+  .footer-newsletter {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 15px;
   }
-
-  .cta-actions .btn-dark,
-  .cta-actions .btn-outline-dark {
+  .nl-form {
     width: 100%;
-    max-width: 240px;
-    text-align: center;
+  }
+  .nl-form input {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
