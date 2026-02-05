@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State IRS - WorkMerate</title>
+    <link rel="stylesheet" href="state-irs.css">
+    <link rel="stylesheet" href="shared-nav-footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar--index">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo">
+          <img src="./assets/brand-logo.png" alt="brand-logo" />
+        </a>
+
+        <ul class="nav-menu desktop-only">
+          <li><a href="agentic-ai.html" class="nav-link">Agentic AI</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="services.html" class="nav-link" aria-haspopup="true">
+              Services
+              <svg
+                class="chevron"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown mega-dropdown">
+              <div class="mega-grid">
+                <div class="mega-list">
+                  <a class="mega-item" href="services.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Tax Automation &amp; Compliance</span>
+                        <span class="mega-subtitle">Primary systems and automation layer</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="ar-reporting.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Audit &amp; Regulatory Reporting</span>
+                        <span class="mega-subtitle">Assurance and statutory services</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="regulatory-engagement.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Regulatory Engagement</span>
+                        <span class="mega-subtitle">Onboarding, certifications, and liaison</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="advanced-intelligence.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Advanced Intelligence</span>
+                        <span class="mega-subtitle">AI, insights, and continuous monitoring</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="mega-list">
+                  <a class="mega-item" href="erp-pos.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">ERP &amp; POS Integrations</span>
+                        <span class="mega-subtitle">Platform and infrastructure services</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="ar-advisory.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Advisory &amp; Risk</span>
+                        <span class="mega-subtitle">Strategy, planning, and risk management</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="managed.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Managed Services</span>
+                        <span class="mega-subtitle">Ongoing operations and capacity support</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="mega-card">
+                  <div class="mega-card-visual"></div>
+                  <p class="mega-card-title">Need the perfect service? We can help!</p>
+                  <a class="mega-card-btn" href="#">Talk to an Expert</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="custom-modules.html" class="nav-link" aria-haspopup="true">
+              Modules
+              <svg
+                class="chevron"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown mega-dropdown">
+              <div class="mega-grid">
+                <div class="mega-list">
+                  <a class="mega-item" href="hr.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Human Resources Management</span>
+                        <span class="mega-subtitle">Empower your workforce from one system</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="#">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Marketing Automation</span>
+                        <span class="mega-subtitle">Transform interactions into growth</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="project-management.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Project Management</span>
+                        <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="sc-management.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Supply Chain Management</span>
+                        <span class="mega-subtitle">Streamline operations from start to finish</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="mega-list">
+                  <a class="mega-item" href="financial-management.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Financial Management</span>
+                        <span class="mega-subtitle">Gain financial control and visibility</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="tax-management.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Tax Management</span>
+                        <span class="mega-subtitle">Simple automated tax management</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="productivity-management.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Productivity Management</span>
+                        <span class="mega-subtitle">Empower teams to collaborate better</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="custom-modules.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Custom Module Development</span>
+                        <span class="mega-subtitle">We provide tailored modules for your sector.</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="mega-card">
+                  <div class="mega-card-visual"></div>
+                  <p class="mega-card-title">Want to see these modules in action?</p>
+                  <a class="mega-card-btn" href="#">Book a Demo</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="learning.html" class="nav-link" aria-haspopup="true">
+              Resources
+              <svg
+                class="chevron"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown mega-dropdown">
+              <div class="mega-grid">
+                <div class="mega-list">
+                  <a class="mega-item" href="compliance-calculator.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Compliance Loss Calculator</span>
+                        <span class="mega-subtitle">Estimate loss from tax gaps.</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="tax-calendar.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Tax Calendar</span>
+                        <span class="mega-subtitle">Transform interactions into growth</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="learning.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Learning</span>
+                        <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="mega-list">
+                  <a class="mega-item" href="tax-laws.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">Tax Laws</span>
+                        <span class="mega-subtitle">Learn Nigeria's tax system.</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="mega-item" href="state-irs.html">
+                    <span class="mega-item-left">
+                      <span class="mega-icon"></span>
+                      <span class="mega-text">
+                        <span class="mega-title">State IRS</span>
+                        <span class="mega-subtitle">Find State Tax Authorities</span>
+                      </span>
+                    </span>
+                    <span class="mega-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="13 6 19 12 13 18"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="mega-card">
+                  <div class="mega-card-visual"></div>
+                  <p class="mega-card-title">Need more information?</p>
+                  <a class="mega-card-btn" href="contact-us.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="about.html" class="nav-link">About us</a></li>
+        </ul>
+
+        <div class="nav-actions desktop-only">
+          <a href="#" class="login-link">Login</a>
+          <a href="#" class="btn-nav">Try it Free</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div
+          class="mobile-panel mobile-panel-main is-active"
+          id="mobileMainPanel"
+        >
+          <a href="agentic-ai.html" class="mobile-link">Agentic AI</a>
+          <button
+            class="mobile-link mobile-trigger"
+            type="button"
+            data-panel="servicesPanel"
+          >
+            Services <span class="mobile-arrow">→</span>
+          </button>
+          <button
+            class="mobile-link mobile-trigger"
+            type="button"
+            data-panel="modulesPanel"
+          >
+            Modules <span class="mobile-arrow">→</span>
+          </button>
+          <a href="pricing.html" class="mobile-link">Pricing</a>
+          <button
+            class="mobile-link mobile-trigger"
+            type="button"
+            data-panel="resourcesPanel"
+          >
+            Resources <span class="mobile-arrow">→</span>
+          </button>
+          <a href="about.html" class="mobile-link">About us</a>
+          <div class="mobile-actions-wrapper">
+            <a href="#" class="btn-nav full-width">Try it Free</a>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" id="servicesPanel">
+          <div class="mobile-subheader">
+            <button class="mobile-back" type="button" data-back>←</button>
+            <span>Services</span>
+          </div>
+          <a href="services.html" class="mobile-sublink"
+            >Tax Automation &amp; Compliance</a
+          >
+          <a href="erp-pos.html" class="mobile-sublink"
+            >ERP &amp; POS Integrations</a
+          >
+          <a href="ar-reporting.html" class="mobile-sublink"
+            >Audit &amp; Regulatory Reporting</a
+          >
+          <a href="ar-advisory.html" class="mobile-sublink"
+            >Advisory &amp; Risk</a
+          >
+          <a href="regulatory-engagement.html" class="mobile-sublink"
+            >Regulatory Engagement</a
+          >
+          <a href="managed.html" class="mobile-sublink active"
+            >Managed Services</a
+          >
+          <a href="advanced-intelligence.html" class="mobile-sublink"
+            >Advanced Intelligence</a
+          >
+          <div class="mobile-actions-wrapper">
+            <a href="#" class="btn-nav full-width">Try it Free</a>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" id="modulesPanel">
+          <div class="mobile-subheader">
+            <button class="mobile-back" type="button" data-back>←</button>
+            <span>Modules</span>
+          </div>
+          <a href="hr.html" class="mobile-sublink"
+            >Human Resources Management</a
+          >
+          <a href="financial-management.html" class="mobile-sublink"
+            >Financial Management</a
+          >
+          <a href="#" class="mobile-sublink">Marketing Automation</a>
+          <a href="tax-management.html" class="mobile-sublink"
+            >Tax Management</a
+          >
+          <a href="project-management.html" class="mobile-sublink"
+            >Project Management</a
+          >
+          <a href="productivity-management.html" class="mobile-sublink"
+            >Productivity Management</a
+          >
+          <a href="sc-management.html" class="mobile-sublink"
+            >Supply Chain Management</a
+          >
+          <a href="custom-modules.html" class="mobile-sublink"
+            >Custom Module Development</a
+          >
+          <div class="mobile-actions-wrapper">
+            <a href="#" class="btn-nav full-width">Try it Free</a>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+
+        <div class="mobile-panel" id="resourcesPanel">
+          <div class="mobile-subheader">
+            <button class="mobile-back" type="button" data-back>←</button>
+            <span>Resources</span>
+          </div>
+          <a href="compliance-calculator.html" class="mobile-sublink"
+            >Compliance Loss Calculator</a
+          >
+          <a href="tax-laws.html" class="mobile-sublink">Tax Laws</a>
+          <a href="tax-calendar.html" class="mobile-sublink">Tax Calendar</a>
+          <a href="state-irs.html" class="mobile-sublink">State IRS</a>
+          <a href="learning.html" class="mobile-sublink">Learning</a>
+          <div class="mobile-actions-wrapper">
+            <a href="#" class="btn-nav full-width">Try it Free</a>
+            <a href="#" class="login-link">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-irs">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="breadcrumbs">
+                    <span class="crumb-gray">Resources</span>
+                    <svg class="crumb-arrow" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                    <span class="crumb-current">State IRS</span>
+                </div>
+                <h1>State Internal Revenue Services Across Nigeria</h1>
+                <p class="hero-description">
+                    Nigeria's tax system includes both federal and state-level tax authorities. While the 
+                    Nigeria Revenue Service (NRS) oversees federal tax administration, each state has 
+                    its own Internal Revenue Service (IRS) responsible for administering, assessing, 
+                    and collecting taxes and internally generated revenue within that state.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-hero-primary">Visit Your State IRS Portal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="equal-height-row">
+                <div class="image-content">
+                    <img src="./assets/state-irs-one.png" alt="Office Workspace">
+                </div>
+                <div class="text-content">
+                    <h2>What Are State Internal Revenue Services?</h2>
+                    <p class="mb-6">State Internal Revenue Services are statutory agencies established by state governments to assess, collect, and manage taxes and other revenues due to the state. They ensure tax compliance, provide taxpayer services, issue tax clearance certificates, and often support economic planning and development at the state level. These agencies typically handle:</p>
+                    
+                    <ul class="icon-list-grid">
+                        <li>
+                            <div class="icon-circle-lime">✱</div>
+                            <span>PAYE and Withholding Taxes in state.</span>
+                        </li>
+                        <li>
+                            <div class="icon-circle-lime">✱</div>
+                            <span>Stamp Duties and other levies</span>
+                        </li>
+                        <li>
+                            <div class="icon-circle-lime">✱</div>
+                            <span>Internally Generated Revenue (IGR) reporting</span>
+                        </li>
+                        <li>
+                            <div class="icon-circle-lime">✱</div>
+                            <span>Taxpayer education and compliance assistance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding state-irs-bg" id="state-directory">
+        <div class="container">
+            <div class="section-header">
+                <h2>State IRS in Nigeria</h2>
+            </div>
+
+            <div class="irs-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'NorthCentral')">North Central</button>
+                <button class="tab-btn" onclick="openTab(event, 'NorthEast')">North-East</button>
+                <button class="tab-btn" onclick="openTab(event, 'NorthWest')">North-West</button>
+                <button class="tab-btn" onclick="openTab(event, 'SouthEast')">South-East</button>
+                <button class="tab-btn" onclick="openTab(event, 'SouthSouth')">South-South</button>
+                <button class="tab-btn" onclick="openTab(event, 'SouthWest')">South-West</button>
+            </div>
+
+            <div id="NorthCentral" class="tab-content active-tab">
+                <div class="irs-grid">
+                    <div class="irs-card">
+                        <div class="irs-logo"><img src="./assets/state-irs/benue.png" alt="BIRS"></div>
+                        <h3>Benue State Internal Revenue Service</h3>
+                        <p><strong>Email:</strong> info@birs.be.gov.ng<br><strong>Contact:</strong> 0803 615 1111</p>
+                        <a href="#" class="btn-outline">Visit Website</a>
+                    </div>
+                    <div class="irs-card">
+                        <div class="irs-logo"><img src="./assets/state-irs/fct.png" alt="FCT-IRS"></div>
+                        <h3>Federal Capital Territory Internal Revenue Service</h3>
+                        <p><strong>Email:</strong> contactus@fctirs.gov.ng<br><strong>Contact:</strong> 0700 220 0002</p>
+                        <a href="#" class="btn-outline">Visit Website</a>
+                    </div>
+                    <div class="irs-card">
+                        <div class="irs-logo"><img src="./assets/state-irs/kwara.png" alt="KW-IRS"></div>
+                        <h3>Kwara State Internal Revenue Service</h3>
+                        <p><strong>Email:</strong> helpdesk@kw-irs.com<br><strong>Contact:</strong> 0700 695 9477</p>
+                        <a href="#" class="btn-outline">Visit Website</a>
+                    </div>
+                    <div class="irs-card">
+                        <div class="irs-logo"><img src="./assets/state-irs/" alt="NSIRS"></div>
+                        <h3>Nasarawa State Internal Revenue Service</h3>
+                        <p><strong>Email:</strong> info@nsirs.na.gov.ng<br><strong>Contact:</strong> 0811 500 0021</p>
+                        <a href="#" class="btn-outline">Visit Website</a>
+                    </div>
+                    <div class="irs-card">
+                        <div class="irs-logo"><img src="https://placehold.co/80x40?text=KGIRS" alt="KGIRS"></div>
+                        <h3>Kogi State Internal Revenue Service</h3>
+                        <p><strong>Email:</strong> info@kgirs.kg.gov.ng<br><strong>Contact:</strong> 0906 288 8802</p>
+                        <a href="#" class="btn-outline">Visit Website</a>
+                    </div>
+                    <div class="irs-card">
+                        <div class="irs-logo"><img src="https://placehold.co/80x40?text=NGSIRS" alt="NGSIRS"></div>
+                        <h3>Niger State Internal Revenue Service</h3>
+                        <p><strong>Email:</strong> info@ngsirs.gov.ng<br><strong>Contact:</strong> 0906 000 9944</p>
+                        <a href="#" class="btn-outline">Visit Website</a>
+                    </div>
+                    <div class="irs-card">
+                        <div class="irs-logo"><img src="https://placehold.co/80x40?text=PSIRS" alt="PSIRS"></div>
+                        <h3>Plateau State Internal Revenue Service</h3>
+                        <p><strong>Email:</strong> contactus@psirs.gov.ng<br><strong>Contact:</strong> 0803 123 0301</p>
+                        <a href="#" class="btn-outline">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="NorthEast" class="tab-content">
+                <div class="irs-grid">
+                    <div class="irs-card"><h3>Adamawa State Internal Revenue Service</h3><p><strong>Email:</strong> info@adirs.ng<br><strong>Contact:</strong> 0803 621 1618</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Bauchi State Internal Revenue Service</h3><p><strong>Email:</strong> info@birs.ba.gov.ng<br><strong>Contact:</strong> 0803 285 2444</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Borno State Internal Revenue Service</h3><p><strong>Email:</strong> info@bsirs.gov.ng<br><strong>Contact:</strong> 0800 2676 6477</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Gombe State Internal Revenue Service</h3><p><strong>Email:</strong> info@gbirs.gov.ng<br><strong>Contact:</strong> 0803 644 1404</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Taraba State Internal Revenue Service</h3><p><strong>Email:</strong> info@tabir.tr.gov.ng<br><strong>Contact:</strong> 0803 624 9568</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Yobe State Internal Revenue Service</h3><p><strong>Email:</strong> info@ybirs.yb.gov.ng<br><strong>Contact:</strong> 0803 620 5003</p><a href="#" class="btn-outline">Visit Website</a></div>
+                </div>
+            </div>
+
+            <div id="NorthWest" class="tab-content">
+                <div class="irs-grid">
+                    <div class="irs-card"><h3>Jigawa State Internal Revenue Service</h3><p><strong>Email:</strong> info@jsbir.jg.gov.ng<br><strong>Contact:</strong> 0803 692 2840</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Kaduna State Internal Revenue Service</h3><p><strong>Email:</strong> info@kadirs.kdsg.gov.ng<br><strong>Contact:</strong> 0908 874 3859</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Kano State Internal Revenue Service</h3><p><strong>Email:</strong> info@kirs.gov.ng<br><strong>Contact:</strong> 0817 741 6260</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Katsina State Internal Revenue Service</h3><p><strong>Email:</strong> info@ktbir.kt.gov.ng<br><strong>Contact:</strong> 0803 331 4234</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Kebbi State Internal Revenue Service</h3><p><strong>Email:</strong> info@irs.kb.gov.ng<br><strong>Contact:</strong> 0806 940 3332</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Sokoto State Internal Revenue Service</h3><p><strong>Email:</strong> info@sirs.so.gov.ng<br><strong>Contact:</strong> 0803 507 5122</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Zamfara State Internal Revenue Service</h3><p><strong>Email:</strong> info@irs.zm.gov.ng<br><strong>Contact:</strong> 0810 820 6816</p><a href="#" class="btn-outline">Visit Website</a></div>
+                </div>
+            </div>
+
+            <div id="SouthEast" class="tab-content">
+                <div class="irs-grid">
+                    <div class="irs-card"><h3>Abia State Internal Revenue Service</h3><p><strong>Email:</strong> info@asirs.gov.ng<br><strong>Contact:</strong> 0818 043 1454</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Anambra State Internal Revenue Service</h3><p><strong>Email:</strong> support@airs.an.gov.ng<br><strong>Contact:</strong> 0706 672 7750</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Ebonyi State Internal Revenue Service</h3><p><strong>Email:</strong> info@ebirs.gov.ng<br><strong>Contact:</strong> 0803 336 9130</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Enugu State Internal Revenue Service</h3><p><strong>Email:</strong> esirs@enugustate.gov.ng<br><strong>Contact:</strong> 0807 562 5555</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Imo State Internal Revenue Service</h3><p><strong>Email:</strong> enquiries@iirs.im.gov.ng<br><strong>Contact:</strong> 0704 414 3059</p><a href="#" class="btn-outline">Visit Website</a></div>
+                </div>
+            </div>
+
+            <div id="SouthSouth" class="tab-content">
+                <div class="irs-grid">
+                    <div class="irs-card"><h3>Akwa Ibom State Internal Revenue Service</h3><p><strong>Email:</strong> info@akirs.gl.gov.ng<br><strong>Contact:</strong> 0813 634 5000</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Cross River State Internal Revenue Service</h3><p><strong>Email:</strong> enquiries@crirs.ng<br><strong>Contact:</strong> 0809 314 4444</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Bayelsa State Internal Revenue Service</h3><p><strong>Email:</strong> info@bayelsabir.com.ng<br><strong>Contact:</strong> 0803 310 4402</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Delta State Internal Revenue Service</h3><p><strong>Email:</strong> info@deltairs.com<br><strong>Contact:</strong> 0905 396 4100</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Edo State Internal Revenue Service</h3><p><strong>Email:</strong> info@eirs.gov.ng<br><strong>Contact:</strong> 0813 097 0146</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Rivers State Internal Revenue Service</h3><p><strong>Email:</strong> info@rivservice.com<br><strong>Contact:</strong> 0810 614 7430</p><a href="#" class="btn-outline">Visit Website</a></div>
+                </div>
+            </div>
+
+            <div id="SouthWest" class="tab-content">
+                <div class="irs-grid">
+                    <div class="irs-card"><h3>Ekiti State Internal Revenue Service</h3><p><strong>Email:</strong> info@ekirs.ng<br><strong>Contact:</strong> 0813 536 2901</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Lagos State Internal Revenue Service</h3><p><strong>Email:</strong> info@lirs.net<br><strong>Contact:</strong> 0700 2255 5477</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Ogun State Internal Revenue Service</h3><p><strong>Email:</strong> info@ogunstaterevenue.com<br><strong>Contact:</strong> 0806 024 0778</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Ondo State Internal Revenue Service</h3><p><strong>Email:</strong> contactus@odirs.ng<br><strong>Contact:</strong> 0906 297 9999</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Osun State Internal Revenue Service</h3><p><strong>Email:</strong> info@oirs.ng<br><strong>Contact:</strong> 0816 133 8176</p><a href="#" class="btn-outline">Visit Website</a></div>
+                    <div class="irs-card"><h3>Oyo State Internal Revenue Service</h3><p><strong>Email:</strong> selfservice@oyostatebir.com<br><strong>Contact:</strong> 0903 442 3126</p><a href="#" class="btn-outline">Visit Website</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>What You Can Do on State IRS Sites</h2>
+                <p>State IRS websites generally allow residents and businesses to:</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="feature-card-clean">
+                    <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+                    <h3>Register for tax identification (state TIN where applicable)</h3>
+                </div>
+                <div class="feature-card-clean">
+                    <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+                    <h3>Calculate and pay taxes online</h3>
+                </div>
+                <div class="feature-card-clean">
+                    <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></div>
+                    <h3>File tax returns or obtain tax clearance certificates</h3>
+                </div>
+                <div class="feature-card-clean">
+                    <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+                    <h3>Download forms, guides, and tax schedules</h3>
+                </div>
+                <div class="feature-card-clean">
+                    <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                    <h3>Access taxpayer support and contact information</h3>
+                </div>
+                <div class="feature-card-clean">
+                    <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+                    <h3>Verify tax documentation</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-cream">
+        <div class="container">
+            <div class="cta-banner">
+                <h2>Simplify Tax Compliance Across States With WorkMerate</h2>
+                <p>Managing tax compliance is complex. WorkMerate centralizes administration, tracking, and reporting, helping businesses reduce risk.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn-dark">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <img src="./assets/brand-logo.png" alt="brand-logo" />
+            </a>
+            <p class="tagline">Smart. Secure. Simplified.</p>
+            <div class="contact-details">
+              <p>
+                <strong>USA Customer Support:</strong><br />(+1) 256 441 3090
+              </p>
+              <p>
+                <strong>NGA Customer Support:</strong><br />(+234) 907 713 7167
+              </p>
+              <p><strong>Email:</strong><br />support@workmerate.ng.com</p>
+            </div>
+            <div class="footer-socials" aria-label="Social links">
+              <a href="#" class="social-icon" aria-label="Facebook">f</a>
+              <a href="#" class="social-icon" aria-label="X">x</a>
+              <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+              <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+              <a href="#" class="social-icon" aria-label="TikTok">t</a>
+            </div>
+          </div>
+          <div class="footer-links-grid">
+            <div>
+              <h4>Services</h4>
+              <ul>
+                <li><a href="services.html">Tax Automation</a></li>
+                <li><a href="erp-pos.html">ERP Integration</a></li>
+                <li><a href="ar-reporting.html">Regulatory Reporting</a></li>
+                <li><a href="ar-advisory.html">Advisory &amp; Strategy</a></li>
+                <li>
+                  <a href="regulatory-engagement.html">Regulatory Engagement</a>
+                </li>
+                <li><a href="agentic-ai.html">Agentic AI</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Modules</h4>
+              <ul>
+                <li><a href="hr.html">Human Resources</a></li>
+                <li>
+                  <a href="financial-management.html">Financial Management</a>
+                </li>
+                <li><a href="tax-management.html">Tax Management</a></li>
+                <li><a href="#">Marketing Automation</a></li>
+                <li>
+                  <a href="project-management.html">Project Management</a>
+                </li>
+                <li><a href="productivity-management.html">Productivity</a></li>
+                <li><a href="sc-management.html">Supply Chain</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Resources</h4>
+              <ul>
+                <li>
+                  <a href="compliance-calculator.html"
+                    >Compliance Loss Calculator</a
+                  >
+                </li>
+                <li><a href="state-irs.html">State IRS</a></li>
+                <li><a href="tax-laws.html">Tax Laws</a></li>
+                <li><a href="tax-calendar.html">Tax Calendar</a></li>
+                <li><a href="learning.html">Learning</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Other Links</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li>
+                  <a href="terms-and-condition.html">Terms and Conditions</a>
+                </li>
+                <li><a href="cookie-policy.html">Cookies Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-newsletter">
+          <div class="nl-header">
+            <h2>Subscribe to our newsletter</h2>
+          </div>
+          <div class="nl-text">
+            <p>
+              Stay informed with the latest news, updates, and resources from
+              WorkMerate, sent directly to your inbox.
+            </p>
+          </div>
+          <div class="nl-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn-dark">Subscribe</button>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="badges">
+            <p>&copy; 2025 WorkMerate - All rights reserved</p>
+            <div class="brand-logos">
+              <img src="./assets/brands/quality-assurance.png" alt="Quality Assurance" />
+              <img src="./assets/brands/environmental-management.png" alt="Environmental Management" />
+              <img src="./assets/brands/occu-health-safety.png" alt="Occupational Health Safety" />
+              <img src="./assets/brands/info-security-manage.png" alt="Information Security Management" />
+              <img src="./assets/brands/NDPC-Nigeria.png" alt="NCPC Nigeria" />
+              <img src="./assets/brands/NITDA.png" alt="National Information Technology Agency" />
+            </div>
+          </div>
+          <div class="ai-logo">
+            <img src="./assets/brands/chat-ai.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  const mobilePanels = document.querySelectorAll(".mobile-panel");
+  const mobileMainPanel = document.getElementById("mobileMainPanel");
+
+  const setActivePanel = (panelId) => {
+    mobilePanels.forEach((panel) => panel.classList.remove("is-active"));
+    const nextPanel = document.getElementById(panelId);
+    (nextPanel || mobileMainPanel).classList.add("is-active");
+  };
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      mobileMenu.classList.toggle("open");
+      if (!mobileMenu.classList.contains("open")) {
+        setActivePanel("mobileMainPanel");
+      }
+    });
+  }
+
+  document.querySelectorAll(".mobile-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      setActivePanel(trigger.dataset.panel);
+    });
+  });
+
+  document.querySelectorAll("[data-back]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setActivePanel("mobileMainPanel");
+    });
+  });
+</script>
+</body>
+</html>
+
+

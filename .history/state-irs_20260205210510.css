@@ -284,7 +284,7 @@ h1 {
 
 /* --- 3. Directory Tabs --- */
 .state-irs-bg {
-  background: url("./assets/state-irs-bg.png") no-repeat center/cover;
+    background: url("./assets/state-irs-bg.png") no-repeat center/cover;
 }
 .section-header {
   text-align: center;
@@ -300,17 +300,17 @@ h1 {
 .irs-tabs {
   display: flex;
   background: #fff;
-  padding: 8px;
-  flex-wrap: nowrap;
-  border-radius: 8px;
-  justify-content: space-between;
+    padding: 4px;
+    flex-wrap: nowrap;
+    border-radius: 8px;
+    justify-content: space-between;
   gap: 12px;
   margin-bottom: 40px;
 }
 .tab-btn {
   padding: 10px 24px;
   background: #fff;
-  border: none;
+  border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
