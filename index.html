@@ -528,8 +528,8 @@
           manages financial reporting for Nigerian businesses
         </p>
         <div class="hero-actions">
-          <a href="#" class="btn-primary h-30">Request Demo</a>
-          <button class="btn-outline">Explore Modules</button>
+          <button id="requestDemoBtn" class="btn-primary h-30">Request Demo</button>
+          <button id="exploreModulesBtn" class="btn-outline">Explore Modules</button>
         </div>
       </div>
       <div class="hero-visual">
@@ -749,9 +749,10 @@
   </section>
 
   <section class="integration-section">
-    <div class="container integration-container row">
+    <div class="container integration-container">
       <div class="integration-visual">
-        <div class="flow-column">
+        <img src="./assets/integration-visual.png" alt="Integration Visual" class="integration-visual-img" />
+        <!-- <div class="flow-column">
           <div class="flow-item">
             <div class="flow-card">
               <img src="./assets/workmerateIcon.svg" alt="WorkMerate Logo" class="logo-img" />
@@ -774,7 +775,10 @@
 
         <div class="flow-middle-section">
           <div class="flow-label-center">Clearance Receipt,<br />IRN & QR Code</div>
-          <div class="flow-arrow-double"><div>←</div><div>→</div></div>
+          <div class="flow-arrow-double">
+            <div>←</div>
+            <div>→</div>
+          </div>
           <div class="flow-label-center">Automated Tax<br />Submission</div>
         </div>
 
@@ -782,10 +786,10 @@
           <div class="flow-item">
             <div class="flow-card nrs-card">
               <img src="./assets/nrs_logo.svg" alt="NRS Logo" class="logo-img" />
-              <!-- <div class="check-badge">✓</div> -->
+              
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="integration-content">
@@ -821,14 +825,15 @@
               over 20 hours weekly. Audit trails are faster and more
               transparent.
             </p>
-          </div>
-          <div class="testimonial-author">
-            <img src="./assets/oriade.png" alt="Engr. Oriade Ebenezer" class="author-image" />
-            <div class="author-info">
-              <h4 class="author-name">Engr. Oriade Ebenezer</h4>
-              <p class="author-title">Founder, Awesomeux Technology</p>
+            <div class="testimonial-author">
+              <img src="./assets/oriade.png" alt="Engr. Oriade Ebenezer" class="author-image" />
+              <div class="author-info">
+                <h4 class="author-name">Engr. Oriade Ebenezer</h4>
+                <p class="author-title">Founder, Awesomeux Technology</p>
+              </div>
             </div>
           </div>
+
         </div>
         <div class="testimonial-card">
           <div class="testimonial-content">
@@ -837,14 +842,16 @@
               The perfect POS for Nigerian SMEs—built for our network
               realities. Sales continue even during downtime.
             </p>
-          </div>
-          <div class="testimonial-author">
-            <img src="./assets/mariam.png" alt="Mariam Ibrahim" class="author-image" />
-            <div class="author-info">
-              <h4 class="author-name">Mariam Ibrahim</h4>
-              <p class="author-title">Founder, Fluttertech</p>
+
+            <div class="testimonial-author">
+              <img src="./assets/mariam.png" alt="Mariam Ibrahim" class="author-image" />
+              <div class="author-info">
+                <h4 class="author-name">Mariam Ibrahim</h4>
+                <p class="author-title">Founder, Fluttertech</p>
+              </div>
             </div>
           </div>
+
         </div>
         <div class="testimonial-card">
           <div class="testimonial-content">
@@ -853,14 +860,15 @@
               WorkMerate unified inventory across all 12 branches. Our
               reporting is now real-time and far more accurate.
             </p>
-          </div>
-          <div class="testimonial-author">
-            <img src="./assets/emmanuel.png" alt="Engr. Adepoju Emmanuel" class="author-image" />
-            <div class="author-info">
-              <h4 class="author-name">Engr. Adepoju Emmanuel</h4>
-              <p class="author-title">CEO, Emalex Ltd.</p>
+            <div class="testimonial-author">
+              <img src="./assets/emmanuel.png" alt="Engr. Adepoju Emmanuel" class="author-image" />
+              <div class="author-info">
+                <h4 class="author-name">Engr. Adepoju Emmanuel</h4>
+                <p class="author-title">CEO, Emalex Ltd.</p>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -878,7 +886,7 @@
             workflow.
           </p>
           <div class="features-list">
-            <div class="feature-item-horizontal">
+            <div class="feature-item-horizontal d-flex">
               <div class="feature-icon yellow">
                 <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -956,7 +964,7 @@
           </div>
         </div>
         <div class="built-image">
-          <img src="https://www.figma.com/api/mcp/asset/876b2a96-6aca-446c-99c0-598fa78c8cda" alt="Integrations" />
+          <img src="./assets/built_to_fit.png" alt="Integrations" />
         </div>
       </div>
     </div>
@@ -1195,233 +1203,461 @@
                 Performance cookies are used to understand and analyze the key
                 performance of the website.
               </p>
-            </div+>
-            <label class="consent-toggle">
-              <input type="checkbox" id="consentPerformance" />
-              <span class="consent-slider"></span>
-            </label>
+              </div+>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentPerformance" />
+                <span class="consent-slider"></span>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="consent-modal__actions">
-        <button class="consent-btn consent-btn--outline" id="cookieRejectModal">
-          Reject All
-        </button>
-        <button class="consent-btn consent-btn--outline" id="cookieSave">
-          Save My Preferences
-        </button>
-        <button class="consent-btn consent-btn--solid" id="cookieAcceptModal">
-          Accept All
-        </button>
+        <div class="consent-modal__actions">
+          <button class="consent-btn consent-btn--outline" id="cookieRejectModal">
+            Reject All
+          </button>
+          <button class="consent-btn consent-btn--outline" id="cookieSave">
+            Save My Preferences
+          </button>
+          <button class="consent-btn consent-btn--solid" id="cookieAcceptModal">
+            Accept All
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Floating Chatbot -->
-  <!-- <div class="floating-chatbot" style="position: fixed; bottom: 36px; right: 36px; width: 64px; height: 64px; background-color: #e8ec67; border-radius: 32px; display: flex; align-items: center; justify-content: center; z-index: 999; cursor: pointer; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);">
+    <!-- Request Demo Modal -->
+    <div id="requestDemoModal"
+      style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1000; justify-content: center; align-items: center;">
+      <div
+        style="background-color: white; padding: 40px; border-radius: 16px; max-width: 500px; width: 90%; position: relative; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);">
+        <button id="closeRequestDemo"
+          style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">×</button>
+        <h2 style="margin-top: 0; color: var(--color-dark-green); margin-bottom: 16px;">Request a Demo</h2>
+        <p style="color: #666; margin-bottom: 24px;">Fill out the form below and our team will be in touch with you
+          shortly to schedule your personalized demo.</p>
+        <form style="display: flex; flex-direction: column; gap: 16px;">
+          <input type="text" placeholder="Full Name" required
+            style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;">
+          <input type="email" placeholder="Email Address" required
+            style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;">
+          <input type="tel" placeholder="Phone Number"
+            style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;">
+          <textarea placeholder="Message (Optional)" rows="4"
+            style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; font-family: inherit;"></textarea>
+          <button type="submit" class="btn-primary" style="margin-top: 8px;">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Explore Modules Modal -->
+    <div id="exploreModulesModal"
+      style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1000; justify-content: center; align-items: center;">
+      <div
+        style="background-color: white; padding: 40px; border-radius: 16px; max-width: 600px; width: 90%; position: relative; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); max-height: 80vh; overflow-y: auto;">
+        <button id="closeExploreModules"
+          style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">×</button>
+        <h2 style="margin-top: 0; color: var(--color-dark-green); margin-bottom: 24px;">WorkMerate Modules</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <a href="hr.html"
+            style="padding: 16px; border: 2px solid #e8ec67; border-radius: 8px; text-decoration: none; color: var(--color-dark-green); font-weight: 600; text-align: center; transition: all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Human Resources</a>
+          <a href="financial-management.html"
+            style="padding: 16px; border: 2px solid #e8ec67; border-radius: 8px; text-decoration: none; color: var(--color-dark-green); font-weight: 600; text-align: center; transition: all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Financial Management</a>
+          <a href="tax-management.html"
+            style="padding: 16px; border: 2px solid #e8ec67; border-radius: 8px; text-decoration: none; color: var(--color-dark-green); font-weight: 600; text-align: center; transition: all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'" onmouseout="this.style.backgroundColor='transparent'">Tax
+            Management</a>
+          <a href="project-management.html"
+            style="padding: 16px; border: 2px solid #e8ec67; border-radius: 8px; text-decoration: none; color: var(--color-dark-green); font-weight: 600; text-align: center; transition: all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Project Management</a>
+          <a href="productivity-management.html"
+            style="padding: 16px; border: 2px solid #e8ec67; border-radius: 8px; text-decoration: none; color: var(--color-dark-green); font-weight: 600; text-align: center; transition: all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Productivity Management</a>
+          <a href="sc-management.html"
+            style="padding: 16px; border: 2px solid #e8ec67; border-radius: 8px; text-decoration: none; color: var(--color-dark-green); font-weight: 600; text-align: center; transition: all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Supply Chain Management</a>
+          <a href="erp-pos.html"
+            style="padding: 16px; border: 2px solid #e8ec67; border-radius: 8px; text-decoration: none; color: var(--color-dark-green); font-weight: 600; text-align: center; transition: all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'" onmouseout="this.style.backgroundColor='transparent'">ERP
+            & POS Integrations</a>
+          <a href="custom-modules.html"
+            style="padding: 16px; border: 2px solid #e8ec67; border-radius: 8px; text-decoration: none; color: var(--color-dark-green); font-weight: 600; text-align: center; transition: all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Custom Module Development</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Request Demo Modal -->
+    <div id="requestDemoModal" class="demo-modal-overlay" style="display:none;">
+      <div class="demo-modal-box">
+        <button class="demo-modal-close" id="closeRequestDemo" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <h2 class="demo-modal-title">Get a Free Demo of WorkMerate</h2>
+        <form class="demo-modal-form" onsubmit="return false;">
+          <div class="demo-form-row">
+            <input type="text" class="demo-input" placeholder="First Name" required />
+            <input type="text" class="demo-input" placeholder="Last Name" required />
+          </div>
+          <div class="demo-form-row">
+            <input type="email" class="demo-input" placeholder="Email Address" required />
+            <input type="tel" class="demo-input" placeholder="Phone Number" required />
+          </div>
+          <input type="url" class="demo-input demo-input-full" placeholder="Website URL" />
+          <div class="demo-select-wrapper">
+            <select class="demo-select">
+              <option value="" disabled selected>How many employees work there?</option>
+              <option value="1-10">1 – 10</option>
+              <option value="11-50">11 – 50</option>
+              <option value="51-200">51 – 200</option>
+              <option value="201-500">201 – 500</option>
+              <option value="501+">501+</option>
+            </select>
+            <svg class="demo-select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <label class="demo-consent-label">
+            <input type="checkbox" class="demo-checkbox" checked />
+            <span class="demo-consent-text">
+              By clicking "Get your free demo", you agree to <strong>WorkMerate</strong> contacting you with
+              marketing-related emails or by telephone. You may unsubscribe from these communications at any time. For
+              information on how to unsubscribe, as well as our privacy practices and commitment to protecting your
+              privacy, please review our <a href="#" class="demo-privacy-link">Privacy Policy</a>
+            </span>
+          </label>
+          <button type="submit" class="demo-submit-btn">Get demo</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Explore Modules Modal -->
+    <div id="exploreModulesModal" class="demo-modal-overlay" style="display:none;">
+      <div class="demo-modal-box">
+        <button class="demo-modal-close" id="closeExploreModules" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <h2 class="demo-modal-title">Explore Our Modules</h2>
+        <p style="font-size:14px; color:#555; margin-bottom:20px;">Discover the full suite of WorkMerate modules built
+          for Nigerian businesses.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <a href="hr.html"
+            style="padding:16px; border:2px solid #e8ec67; border-radius:8px; text-decoration:none; color:#4a6117; font-weight:600; text-align:center; transition:all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Human Resources</a>
+          <a href="financial-management.html"
+            style="padding:16px; border:2px solid #e8ec67; border-radius:8px; text-decoration:none; color:#4a6117; font-weight:600; text-align:center; transition:all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Financial Management</a>
+          <a href="tax-management.html"
+            style="padding:16px; border:2px solid #e8ec67; border-radius:8px; text-decoration:none; color:#4a6117; font-weight:600; text-align:center; transition:all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'" onmouseout="this.style.backgroundColor='transparent'">Tax
+            Management</a>
+          <a href="project-management.html"
+            style="padding:16px; border:2px solid #e8ec67; border-radius:8px; text-decoration:none; color:#4a6117; font-weight:600; text-align:center; transition:all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Project Management</a>
+          <a href="productivity-management.html"
+            style="padding:16px; border:2px solid #e8ec67; border-radius:8px; text-decoration:none; color:#4a6117; font-weight:600; text-align:center; transition:all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Productivity Management</a>
+          <a href="sc-management.html"
+            style="padding:16px; border:2px solid #e8ec67; border-radius:8px; text-decoration:none; color:#4a6117; font-weight:600; text-align:center; transition:all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Supply Chain Management</a>
+          <a href="erp-pos.html"
+            style="padding:16px; border:2px solid #e8ec67; border-radius:8px; text-decoration:none; color:#4a6117; font-weight:600; text-align:center; transition:all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'" onmouseout="this.style.backgroundColor='transparent'">ERP
+            &amp; POS Integrations</a>
+          <a href="custom-modules.html"
+            style="padding:16px; border:2px solid #e8ec67; border-radius:8px; text-decoration:none; color:#4a6117; font-weight:600; text-align:center; transition:all 0.2s;"
+            onmouseover="this.style.backgroundColor='#f0f2e8'"
+            onmouseout="this.style.backgroundColor='transparent'">Custom Module Development</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Chatbot -->
+    <!-- <div class="floating-chatbot" style="position: fixed; bottom: 36px; right: 36px; width: 64px; height: 64px; background-color: #e8ec67; border-radius: 32px; display: flex; align-items: center; justify-content: center; z-index: 999; cursor: pointer; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);">
     <img src="assets/ai-floating-chatbot-animation-gif-download-7813499 2.png" alt="AI Chatbot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 32px;" onerror="document.getElementById('chatbot-fallback').style.display='flex'; this.style.display='none'">
     <span id="chatbot-fallback" style="font-size: 36px; display: none;">💬</span>
   </div> -->
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const mobileMenu = document.getElementById("mobileMenu");
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
 
-    const mobilePanels = document.querySelectorAll(".mobile-panel");
-    const mobileMainPanel = document.getElementById("mobileMainPanel");
+      const mobilePanels = document.querySelectorAll(".mobile-panel");
+      const mobileMainPanel = document.getElementById("mobileMainPanel");
 
-    const setActivePanel = (panelId) => {
-      mobilePanels.forEach((panel) => panel.classList.remove("is-active"));
-      const nextPanel = document.getElementById(panelId);
-      (nextPanel || mobileMainPanel).classList.add("is-active");
-    };
+      const setActivePanel = (panelId) => {
+        mobilePanels.forEach((panel) => panel.classList.remove("is-active"));
+        const nextPanel = document.getElementById(panelId);
+        (nextPanel || mobileMainPanel).classList.add("is-active");
+      };
 
-    if (hamburger && mobileMenu) {
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        mobileMenu.classList.toggle("open");
-        if (!mobileMenu.classList.contains("open")) {
+      if (hamburger && mobileMenu) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          mobileMenu.classList.toggle("open");
+          if (!mobileMenu.classList.contains("open")) {
+            setActivePanel("mobileMainPanel");
+          }
+        });
+      }
+
+      document.querySelectorAll(".mobile-trigger").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          setActivePanel(trigger.dataset.panel);
+        });
+      });
+
+      document.querySelectorAll("[data-back]").forEach((btn) => {
+        btn.addEventListener("click", () => {
           setActivePanel("mobileMainPanel");
+        });
+      });
+    </script>
+
+    <script>
+      const cookieBanner = document.getElementById("cookieBanner");
+      const cookieModal = document.getElementById("cookieModal");
+      const cookieCustomize = document.getElementById("cookieCustomize");
+      const cookieReject = document.getElementById("cookieReject");
+      const cookieAccept = document.getElementById("cookieAccept");
+      const cookieRejectModal = document.getElementById("cookieRejectModal");
+      const cookieAcceptModal = document.getElementById("cookieAcceptModal");
+      const cookieSave = document.getElementById("cookieSave");
+      const cookieModalClose = document.getElementById("cookieModalClose");
+
+      const consentFunctional = document.getElementById("consentFunctional");
+      const consentAnalytical = document.getElementById("consentAnalytical");
+      const consentPerformance = document.getElementById("consentPerformance");
+
+      const CONSENT_KEY = "wm_cookie_consent_v1";
+
+      const showBanner = () => {
+        if (cookieBanner) {
+          cookieBanner.classList.remove("consent-hidden");
         }
-      });
-    }
-
-    document.querySelectorAll(".mobile-trigger").forEach((trigger) => {
-      trigger.addEventListener("click", () => {
-        setActivePanel(trigger.dataset.panel);
-      });
-    });
-
-    document.querySelectorAll("[data-back]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        setActivePanel("mobileMainPanel");
-      });
-    });
-  </script>
-
-  <script>
-    const cookieBanner = document.getElementById("cookieBanner");
-    const cookieModal = document.getElementById("cookieModal");
-    const cookieCustomize = document.getElementById("cookieCustomize");
-    const cookieReject = document.getElementById("cookieReject");
-    const cookieAccept = document.getElementById("cookieAccept");
-    const cookieRejectModal = document.getElementById("cookieRejectModal");
-    const cookieAcceptModal = document.getElementById("cookieAcceptModal");
-    const cookieSave = document.getElementById("cookieSave");
-    const cookieModalClose = document.getElementById("cookieModalClose");
-
-    const consentFunctional = document.getElementById("consentFunctional");
-    const consentAnalytical = document.getElementById("consentAnalytical");
-    const consentPerformance = document.getElementById("consentPerformance");
-
-    const CONSENT_KEY = "wm_cookie_consent_v1";
-
-    const showBanner = () => {
-      if (cookieBanner) {
-        cookieBanner.classList.remove("consent-hidden");
-      }
-    };
-
-    const hideBanner = () => {
-      if (cookieBanner) {
-        cookieBanner.classList.add("consent-hidden");
-      }
-    };
-
-    const showModal = () => {
-      if (cookieModal) {
-        cookieModal.classList.remove("consent-hidden");
-      }
-    };
-
-    const hideModal = () => {
-      if (cookieModal) {
-        cookieModal.classList.add("consent-hidden");
-      }
-    };
-
-    const saveConsent = (consent) => {
-      localStorage.setItem(CONSENT_KEY, JSON.stringify(consent));
-    };
-
-    const loadConsent = () => {
-      const saved = localStorage.getItem(CONSENT_KEY);
-      if (!saved) return null;
-      try {
-        return JSON.parse(saved);
-      } catch {
-        return null;
-      }
-    };
-
-    const applyConsentToToggles = (consent) => {
-      if (!consent) return;
-      consentFunctional.checked = !!consent.functional;
-      consentAnalytical.checked = !!consent.analytical;
-      consentPerformance.checked = !!consent.performance;
-    };
-
-    const acceptAll = () => {
-      const consent = {
-        necessary: true,
-        functional: true,
-        analytical: true,
-        performance: true,
       };
-      saveConsent(consent);
-      hideBanner();
-      hideModal();
-    };
 
-    const rejectAll = () => {
-      const consent = {
-        necessary: true,
-        functional: false,
-        analytical: false,
-        performance: false,
+      const hideBanner = () => {
+        if (cookieBanner) {
+          cookieBanner.classList.add("consent-hidden");
+        }
       };
-      saveConsent(consent);
-      hideBanner();
-      hideModal();
-    };
 
-    const savePreferences = () => {
-      const consent = {
-        necessary: true,
-        functional: consentFunctional.checked,
-        analytical: consentAnalytical.checked,
-        performance: consentPerformance.checked,
+      const showModal = () => {
+        if (cookieModal) {
+          cookieModal.classList.remove("consent-hidden");
+        }
       };
-      saveConsent(consent);
-      hideBanner();
-      hideModal();
-    };
 
-    const initConsent = () => {
-      const saved = loadConsent();
-      if (saved) {
-        applyConsentToToggles(saved);
+      const hideModal = () => {
+        if (cookieModal) {
+          cookieModal.classList.add("consent-hidden");
+        }
+      };
+
+      const saveConsent = (consent) => {
+        localStorage.setItem(CONSENT_KEY, JSON.stringify(consent));
+      };
+
+      const loadConsent = () => {
+        const saved = localStorage.getItem(CONSENT_KEY);
+        if (!saved) return null;
+        try {
+          return JSON.parse(saved);
+        } catch {
+          return null;
+        }
+      };
+
+      const applyConsentToToggles = (consent) => {
+        if (!consent) return;
+        consentFunctional.checked = !!consent.functional;
+        consentAnalytical.checked = !!consent.analytical;
+        consentPerformance.checked = !!consent.performance;
+      };
+
+      const acceptAll = () => {
+        const consent = {
+          necessary: true,
+          functional: true,
+          analytical: true,
+          performance: true,
+        };
+        saveConsent(consent);
         hideBanner();
         hideModal();
-        return;
-      }
-      showBanner();
-    };
+      };
 
-    if (cookieCustomize) {
-      cookieCustomize.addEventListener("click", () => {
+      const rejectAll = () => {
+        const consent = {
+          necessary: true,
+          functional: false,
+          analytical: false,
+          performance: false,
+        };
+        saveConsent(consent);
         hideBanner();
-        showModal();
+        hideModal();
+      };
+
+      const savePreferences = () => {
+        const consent = {
+          necessary: true,
+          functional: consentFunctional.checked,
+          analytical: consentAnalytical.checked,
+          performance: consentPerformance.checked,
+        };
+        saveConsent(consent);
+        hideBanner();
+        hideModal();
+      };
+
+      const initConsent = () => {
         const saved = loadConsent();
-        applyConsentToToggles(
-          saved || {
-            functional: false,
-            analytical: false,
-            performance: false,
-          },
-        );
-      });
-    }
-
-    if (cookieModalClose) {
-      cookieModalClose.addEventListener("click", () => {
-        hideModal();
+        if (saved) {
+          applyConsentToToggles(saved);
+          hideBanner();
+          hideModal();
+          return;
+        }
         showBanner();
-      });
-    }
+      };
 
-    if (cookieModal) {
-      cookieModal.addEventListener("click", (event) => {
-        if (event.target === cookieModal) {
+      if (cookieCustomize) {
+        cookieCustomize.addEventListener("click", () => {
+          hideBanner();
+          showModal();
+          const saved = loadConsent();
+          applyConsentToToggles(
+            saved || {
+              functional: false,
+              analytical: false,
+              performance: false,
+            },
+          );
+        });
+      }
+
+      if (cookieModalClose) {
+        cookieModalClose.addEventListener("click", () => {
           hideModal();
           showBanner();
+        });
+      }
+
+      if (cookieModal) {
+        cookieModal.addEventListener("click", (event) => {
+          if (event.target === cookieModal) {
+            hideModal();
+            showBanner();
+          }
+        });
+      }
+
+      if (cookieAccept) {
+        cookieAccept.addEventListener("click", acceptAll);
+      }
+
+      if (cookieReject) {
+        cookieReject.addEventListener("click", rejectAll);
+      }
+
+      if (cookieAcceptModal) {
+        cookieAcceptModal.addEventListener("click", acceptAll);
+      }
+
+      if (cookieRejectModal) {
+        cookieRejectModal.addEventListener("click", rejectAll);
+      }
+
+      if (cookieSave) {
+        cookieSave.addEventListener("click", savePreferences);
+      }
+
+      initConsent();
+
+      // Modal functionality for Request Demo and Explore Modules
+      const requestDemoBtn = document.getElementById('requestDemoBtn');
+      const exploreModulesBtn = document.getElementById('exploreModulesBtn');
+      const requestDemoModal = document.getElementById('requestDemoModal');
+      const exploreModulesModal = document.getElementById('exploreModulesModal');
+      const closeRequestDemoBtn = document.getElementById('closeRequestDemo');
+      const closeExploreModulesBtn = document.getElementById('closeExploreModules');
+
+      console.log('Buttons and modals found:', {
+        requestDemoBtn: !!requestDemoBtn,
+        exploreModulesBtn: !!exploreModulesBtn,
+        requestDemoModal: !!requestDemoModal,
+        exploreModulesModal: !!exploreModulesModal,
+        closeRequestDemoBtn: !!closeRequestDemoBtn,
+        closeExploreModulesBtn: !!closeExploreModulesBtn
+      });
+
+      if (requestDemoBtn && requestDemoModal) {
+        requestDemoBtn.addEventListener('click', (e) => {
+          console.log('Request Demo button clicked');
+          e.preventDefault();
+          e.stopPropagation();
+          requestDemoModal.style.setProperty('display', 'flex', 'important');
+          requestDemoModal.style.setProperty('visibility', 'visible', 'important');
+          console.log('Modal display set to:', window.getComputedStyle(requestDemoModal).display);
+        });
+      }
+
+      if (exploreModulesBtn && exploreModulesModal) {
+        exploreModulesBtn.addEventListener('click', (e) => {
+          console.log('Explore Modules button clicked');
+          e.preventDefault();
+          e.stopPropagation();
+          exploreModulesModal.style.setProperty('display', 'flex', 'important');
+          exploreModulesModal.style.setProperty('visibility', 'visible', 'important');
+          console.log('Modal display set to:', window.getComputedStyle(exploreModulesModal).display);
+        });
+      }
+
+      if (closeRequestDemoBtn && requestDemoModal) {
+        closeRequestDemoBtn.addEventListener('click', () => {
+          requestDemoModal.style.display = 'none';
+        });
+      }
+
+      if (closeExploreModulesBtn && exploreModulesModal) {
+        closeExploreModulesBtn.addEventListener('click', () => {
+          exploreModulesModal.style.display = 'none';
+        });
+      }
+
+      // Close modals when clicking outside the content
+      window.addEventListener('click', (event) => {
+        if (event.target === requestDemoModal && requestDemoModal) {
+          requestDemoModal.style.display = 'none';
+        }
+        if (event.target === exploreModulesModal && exploreModulesModal) {
+          exploreModulesModal.style.display = 'none';
         }
       });
-    }
-
-    if (cookieAccept) {
-      cookieAccept.addEventListener("click", acceptAll);
-    }
-
-    if (cookieReject) {
-      cookieReject.addEventListener("click", rejectAll);
-    }
-
-    if (cookieAcceptModal) {
-      cookieAcceptModal.addEventListener("click", acceptAll);
-    }
-
-    if (cookieRejectModal) {
-      cookieRejectModal.addEventListener("click", rejectAll);
-    }
-
-    if (cookieSave) {
-      cookieSave.addEventListener("click", savePreferences);
-    }
-
-    initConsent();
-  </script>
+    </script>
 </body>
 
 </html>
