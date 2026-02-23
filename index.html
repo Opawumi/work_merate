@@ -1184,104 +1184,208 @@
         <p class="consent-intro">
           We use cookies to help you navigate efficiently and perform certain functions. You will find detailed
           information about all cookies under each consent category below. The cookies that are categorized as
-          "Necessary" are stored on your browser as they are essential for enabling the basic functional... <a href="#"
-            class="consent-show-more">Show more</a>
+          "Necessary" are stored on your browser as they are essential for enabling the basic functional...
+          <a href="#" class="consent-show-more" id="consentShowMore">Show more</a>
+          <span class="consent-intro-full" id="consentIntroFull" style="display:none;">
+            ities of the site. We also use third-party cookies that help us analyze how you use this website, store your
+            preferences, and provide the content and advertisements that are relevant to you. These cookies will only be
+            stored in your browser with your prior consent. You can choose to enable or disable some or all of these
+            cookies but disabling some of them may affect your browsing experience.
+          </span>
+          <a href="#" class="consent-show-more" id="consentShowLess" style="display:none;">Show less</a>
         </p>
 
         <div class="consent-list">
+          <!-- Necessary -->
           <div class="consent-item">
-            <div class="consent-item__header">
-              <span class="consent-caret">›</span>
-              <h4>Necessary</h4>
+            <div class="consent-item__row">
+              <div class="consent-item__header">
+                <span class="consent-caret">›</span>
+                <h4>Necessary</h4>
+              </div>
+              <a href="#"><span class="consent-chip">Always Active</span></a>
             </div>
-            <div class="consent-item__content">
-              <p>
-                Necessary cookies are required to enable the basic features of
-                this site, such as providing secure log-in or adjusting your
-                consent preferences. These cookies do not store any personally identifiable data.
-              </p>
+            <p class="consent-item__desc">
+              Necessary cookies are required to enable the basic features of this site, such as providing secure
+              log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.
+            </p>
+            <div class="consent-item__details">
+              <div class="consent-cookie-empty">No cookies to display.</div>
             </div>
-            <a href="http://"><span class="consent-chip">Always Active</span></a>
           </div>
+
+          <!-- Functional -->
           <div class="consent-item">
-            <div class="consent-item__header">
-              <span class="consent-caret">›</span>
-              <h4>Functional</h4>
+            <div class="consent-item__row">
+              <div class="consent-item__header">
+                <span class="consent-caret">›</span>
+                <h4>Functional</h4>
+              </div>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentFunctional" />
+                <span class="consent-slider"></span>
+              </label>
             </div>
-            <div class="consent-item__content">
-              <p>
-                Functional cookies help perform certain functionalities like sharing the content of the website on
-                social media platforms, collecting feedback, and other third-party features.
-              </p>
+            <p class="consent-item__desc">
+              Functional cookies help perform certain functionalities like sharing the content of the website on
+              social media platforms, collecting feedback, and other third-party features.
+            </p>
+            <div class="consent-item__details">
+              <table class="consent-cookie-table">
+                <tbody>
+                  <tr>
+                    <td class="cc-label">Cookie</td>
+                    <td>li_gc</td>
+                  </tr>
+                  <tr>
+                    <td class="cc-label">Duration</td>
+                    <td>6 month</td>
+                  </tr>
+                  <tr>
+                    <td class="cc-label">Description</td>
+                    <td>LinkedIn set this cookie for storing visitor's consent regarding using cookies for non-essential
+                      purpose.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="consent-cookie-table">
+                <tbody>
+                  <tr>
+                    <td class="cc-label">Cookie</td>
+                    <td>li_gc</td>
+                  </tr>
+                  <tr>
+                    <td class="cc-label">Duration</td>
+                    <td>6 month</td>
+                  </tr>
+                  <tr>
+                    <td class="cc-label">Description</td>
+                    <td>LinkedIn set this cookie for storing visitor's consent regarding using cookies for non-essential
+                      purpose.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="consent-cookie-table">
+                <tbody>
+                  <tr>
+                    <td class="cc-label">Cookie</td>
+                    <td>li_gc</td>
+                  </tr>
+                  <tr>
+                    <td class="cc-label">Duration</td>
+                    <td>6 month</td>
+                  </tr>
+                  <tr>
+                    <td class="cc-label">Description</td>
+                    <td>LinkedIn set this cookie for storing visitor's consent regarding using cookies for non-essential
+                      purpose.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="consent-cookie-table">
+                <tbody>
+                  <tr>
+                    <td class="cc-label">Cookie</td>
+                    <td>li_gc</td>
+                  </tr>
+                  <tr>
+                    <td class="cc-label">Duration</td>
+                    <td>6 month</td>
+                  </tr>
+                  <tr>
+                    <td class="cc-label">Description</td>
+                    <td>LinkedIn set this cookie for storing visitor's consent regarding using cookies for non-essential
+                      purpose.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <label class="consent-toggle">
-              <input type="checkbox" id="consentFunctional" />
-              <span class="consent-slider"></span>
-            </label>
           </div>
+
+          <!-- Analytical -->
           <div class="consent-item">
-            <div class="consent-item__header">
-              <span class="consent-caret">›</span>
-              <h4>Analytical</h4>
+            <div class="consent-item__row">
+              <div class="consent-item__header">
+                <span class="consent-caret">›</span>
+                <h4>Analytical</h4>
+              </div>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentAnalytical" />
+                <span class="consent-slider"></span>
+              </label>
             </div>
-            <div class="consent-item__content">
-              <p>
-                Analytical cookies are used to understand how visitors interact with the website. These cookies help
-                provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.
-              </p>
+            <p class="consent-item__desc">
+              Analytical cookies are used to understand how visitors interact with the website. These cookies help
+              provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.
+            </p>
+            <div class="consent-item__details">
+              <div class="consent-cookie-empty">No cookies to display.</div>
             </div>
-            <label class="consent-toggle">
-              <input type="checkbox" id="consentAnalytical" />
-              <span class="consent-slider"></span>
-            </label>
           </div>
+
+          <!-- Performance -->
           <div class="consent-item">
-            <div class="consent-item__header">
-              <span class="consent-caret">›</span>
-              <h4>Performance</h4>
+            <div class="consent-item__row">
+              <div class="consent-item__header">
+                <span class="consent-caret">›</span>
+                <h4>Performance</h4>
+              </div>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentPerformance" />
+                <span class="consent-slider"></span>
+              </label>
             </div>
-            <div class="consent-item__content">
-              <p>
-                Performance cookies are used to understand and analyze the key performance of the website.
-              </p>
+            <p class="consent-item__desc">
+              Performance cookies are used to understand and analyze the key performance indices of the website which
+              helps in delivering a better user experience for the visitors.
+            </p>
+            <div class="consent-item__details">
+              <div class="consent-cookie-empty">No cookies to display.</div>
             </div>
-            <label class="consent-toggle">
-              <input type="checkbox" id="consentPerformance" />
-              <span class="consent-slider"></span>
-            </label>
           </div>
+
+          <!-- Advertisement -->
           <div class="consent-item">
-            <div class="consent-item__header">
-              <span class="consent-caret">›</span>
-              <h4>Advertisement</h4>
+            <div class="consent-item__row">
+              <div class="consent-item__header">
+                <span class="consent-caret">›</span>
+                <h4>Advertisement</h4>
+              </div>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentAdvertisement" />
+                <span class="consent-slider"></span>
+              </label>
             </div>
-            <div class="consent-item__content">
-              <p>
-                Advertisement cookies are used to provide visitors with customised advertisements based on the pages you
-                visited previously and to analyse the effectiveness of the ad campaigns.
-              </p>
+            <p class="consent-item__desc">
+              Advertisement cookies are used to provide visitors with customised advertisements based on the pages you
+              visited previously and to analyse the effectiveness of the ad campaigns.
+            </p>
+            <div class="consent-item__details">
+              <div class="consent-cookie-empty">No cookies to display.</div>
             </div>
-            <label class="consent-toggle">
-              <input type="checkbox" id="consentAdvertisement" />
-              <span class="consent-slider"></span>
-            </label>
           </div>
+
+          <!-- Uncategorized -->
           <div class="consent-item">
-            <div class="consent-item__header">
-              <span class="consent-caret">›</span>
-              <h4>Uncategorized</h4>
+            <div class="consent-item__row">
+              <div class="consent-item__header">
+                <span class="consent-caret">›</span>
+                <h4>Uncategorized</h4>
+              </div>
+              <label class="consent-toggle">
+                <input type="checkbox" id="consentUncategorized" />
+                <span class="consent-slider"></span>
+              </label>
             </div>
-            <div class="consent-item__content">
-              <p>
-                Other uncategorised cookies are those that are being analysed and have not been classified into a
-                category as yet.
-              </p>
+            <p class="consent-item__desc">
+              Other uncategorised cookies are those that are being analysed and have not been classified into a
+              category as yet.
+            </p>
+            <div class="consent-item__details">
+              <div class="consent-cookie-empty">No cookies to display.</div>
             </div>
-            <label class="consent-toggle">
-              <input type="checkbox" id="consentUncategorized" />
-              <span class="consent-slider"></span>
-            </label>
           </div>
+
         </div>
 
       </div> <!-- end .consent-modal__body -->
@@ -1626,13 +1730,22 @@
         });
       });
 
-      // Show more logic for intro
-      const showMoreBtn = document.querySelector('.consent-show-more');
-      const consentIntro = document.querySelector('.consent-intro');
-      if (showMoreBtn && consentIntro) {
+      // Show more / Show less logic for intro
+      const showMoreBtn = document.getElementById('consentShowMore');
+      const showLessBtn = document.getElementById('consentShowLess');
+      const introFull = document.getElementById('consentIntroFull');
+      if (showMoreBtn && showLessBtn && introFull) {
         showMoreBtn.addEventListener('click', (e) => {
           e.preventDefault();
-          consentIntro.textContent = 'We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below. The cookies that are categorized as "Necessary" are stored on your browser as they are essential for enabling the basic functionality of the site.';
+          introFull.style.display = 'inline';
+          showMoreBtn.style.display = 'none';
+          showLessBtn.style.display = 'inline';
+        });
+        showLessBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          introFull.style.display = 'none';
+          showMoreBtn.style.display = 'inline';
+          showLessBtn.style.display = 'none';
         });
       }
 
