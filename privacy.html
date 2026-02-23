@@ -786,7 +786,11 @@
         <hr />
         <div class="footer-bottom">
           <div class="badges">
-            <p>&copy; 2025 WorkMerate - All rights reserved</p>
+            <!-- <p>&copy; 2025 WorkMerate - All rights reserved</p> -->
+            <div class="year">
+              <div id="current-year"></div> 
+              <div>WorkMerate - All rights reserved</div>
+            </div>
             <div class="brand-logos">
               <img src="./assets/brands/quality-assurance.png" alt="Quality Assurance" />
               <img src="./assets/brands/environmental-management.png" alt="Environmental Management" />
@@ -839,6 +843,8 @@
       setActivePanel("mobileMainPanel");
     });
   });
+
+  document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
