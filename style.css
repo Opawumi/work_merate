@@ -1010,6 +1010,7 @@ h6 {
     font-size: clamp(14px, 2vw, 16px);
     line-height: 1.6;
     color: #e6edd8;
+    margin-top: 10px;
 }
 
 .cta-actions {
@@ -1018,7 +1019,7 @@ h6 {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 8px;
+    margin-top: 28px;
 }
 
 .cta-btn {
@@ -1062,9 +1063,9 @@ h6 {
 
 .cta-image {
     position: absolute;
-    right: -1px;
-    bottom: 10px;
-    width: 420px;
+    right: -10px;
+    bottom: -2px;
+    width: 465px;
     height: auto;
     object-fit: contain;
     display: block;
