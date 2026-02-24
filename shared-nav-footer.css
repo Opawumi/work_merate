@@ -48,6 +48,7 @@
   margin: 0 1px;
   top: 2px;
 }
+
 .bag-icon::after {
   content: "";
   position: absolute;
@@ -92,6 +93,7 @@
   font-weight: 600;
   color: #000;
 }
+
 .nav-link.active::after {
   content: "";
   position: absolute;
@@ -400,9 +402,11 @@
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
@@ -627,10 +631,8 @@
 
 .footer-newsletter {
   display: grid;
-  grid-template-columns: minmax(90px, 320px) minmax(300px, 520px) minmax(
-      350px,
-      360px
-    );
+  grid-template-columns: minmax(90px, 320px) minmax(300px, 520px) minmax(350px,
+      360px);
   gap: 20px;
   align-items: center;
   padding: 40px 0;
@@ -826,4 +828,44 @@ ul {
 a {
   text-decoration: none !important;
   color: inherit !important;
+}
+
+/* ============================================
+   Floating Chatbot (shared — all pages)
+   ============================================ */
+.floating-chatbot {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  width: 64px;
+  height: 64px;
+  background-color: #e8ec67;
+  border-radius: 32px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 64px 4px rgba(73, 96, 23, 0.25);
+  z-index: 999;
+  cursor: pointer;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.floating-chatbot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  display: block;
+}
+
+.floating-chatbot .chatbot-fallback {
+  font-size: 32px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-chatbot:has(img[style*="display: none"]) .chatbot-fallback {
+  display: flex;
 }
