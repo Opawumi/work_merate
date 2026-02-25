@@ -491,7 +491,7 @@ img {
 }
 
 .benefit-card p {
-  font-size: 14px;
+  font-size: 16px;
   color: #666;
   line-height: 1.5;
 }
@@ -500,7 +500,7 @@ img {
    7. CTA Banner
    =========================================== */
 .cta-banner {
-  background: var(--color-yellow-cta);
+  background: #E8EC67;
   border-radius: 24px;
   padding: 72px 48px;
   text-align: center;
@@ -514,7 +514,7 @@ img {
 }
 
 .cta-banner p {
-  max-width: 640px;
+  max-width: 890px;
   margin: 0 auto 36px;
   font-size: 16px;
   color: #333;
@@ -528,7 +528,7 @@ img {
 }
 
 .btn-dark {
-  background: var(--color-dark-green) !important;
+  background: #4A6117 !important;
   color: #fff !important;
   padding: 14px 32px;
   border-radius: 6px;
