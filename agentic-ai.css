@@ -471,9 +471,9 @@ img {
 }
 
 .icon-box-lime {
-  width: 36px;
-  height: 36px;
-  background: var(--color-lime-bg);
+  width: 39px;
+  height: 39px;
+  background: #E8EC67;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -484,7 +484,7 @@ img {
 }
 
 .benefit-card h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
   color: #111;
