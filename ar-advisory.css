@@ -1,3 +1,44 @@
+/* --- Reset & Variables --- */
+:root {
+  --font-family: "Inter", sans-serif;
+  --color-text-main: #111;
+  --color-text-light: #555;
+  --color-dark-green: #4f6f2f;
+  --color-agentic-green: #4a6117;
+  --color-lime-bg: #ebf2af;
+  --color-cream-bg: #f0f2eb;
+  --color-yellow-cta: #f0f4a4;
+  --color-border: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text-main);
+  background: #fff;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* --- Navigation Styles --- */
 .wm-nav-wrapper {
     /* Variables */
