@@ -167,6 +167,13 @@ h6 {
     margin-bottom: 4px;
 }
 
+.section-description2 {
+    /* font-size: var(--font-size-body-xlarge); */
+    font-size: var(--Size-Body-XLarge, 14px);
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 4px;
+}
 
 .section-description.white {
     color: var(--white);
@@ -362,7 +369,7 @@ h6 {
 }
 
 .problem-image img {
-    width: 750px;
+    /* width: 750px; */
     height: 65%;
     object-fit: cover;
     border-radius: 10px !important;
@@ -373,7 +380,7 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
-
+    height: 100px;
 }
 
 .feature-item {
@@ -439,8 +446,8 @@ h6 {
 }
 
 .feature-desc {
-    font-size: var(--Size-Body-Medium, 14.5px);
-    line-height: var(--line-height-body-medium);
+    font-size: var(--Size-Body-Medium, 13px);
+    line-height: 18px ;
     color: #000000;
     width: 90%;
 }
@@ -556,7 +563,7 @@ h6 {
 }
 
 .everything-image img {
-    width: 550px;
+    /* width: 550px; */
     height: 90%;
     object-fit: cover;
 }
@@ -1337,7 +1344,7 @@ h6 {
     text-decoration: none;
     display: inline-block;
     transition: background 0.2s;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .btn-light:hover {
