@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--font-family);
   color: var(--color-text-main);
@@ -22,23 +23,23 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 ul {
   list-style: none;
 }
 
 /* Utilities */
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
+/* Container is inherited from shared-nav-footer.css */
+
 .bg-cream {
   background-color: var(--color-cream-bg);
 }
+
 .center-text {
   text-align: center;
 }
@@ -53,18 +54,21 @@ ul {
   position: relative;
   z-index: 100;
 }
+
 .nav-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   font-size: 24px;
   font-weight: 800;
   display: flex;
   align-items: center;
 }
+
 .bag-icon {
   width: 16px;
   height: 12px;
@@ -74,6 +78,7 @@ ul {
   position: relative;
   margin: 0 1px;
 }
+
 .bag-icon::after {
   content: "";
   position: absolute;
@@ -84,12 +89,14 @@ ul {
   background: var(--color-dark-green);
   border-radius: 50%;
 }
+
 .nav-menu {
   display: flex;
   gap: 32px;
   margin: auto 10px;
   white-space: nowrap;
 }
+
 .nav-link {
   font-size: 14px;
   font-weight: 500;
@@ -97,20 +104,24 @@ ul {
   align-items: center;
   gap: 4px;
 }
+
 .nav-link.active {
   font-weight: 700;
   color: #000;
 }
+
 .nav-actions {
   display: flex;
   gap: 20px;
   align-items: center;
   white-space: nowrap;
 }
+
 .login-link {
   font-weight: 600;
   font-size: 14px;
 }
+
 .btn-nav {
   background: #ffffff;
   color: var(--color-dark-green);
@@ -119,17 +130,20 @@ ul {
   font-weight: 600;
   font-size: 14px;
 }
+
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
 }
+
 .hamburger span {
   width: 24px;
   height: 3px;
   background: #000;
 }
+
 .mobile-menu {
   display: none;
   position: absolute;
@@ -140,6 +154,7 @@ ul {
   padding: 20px;
   border-bottom: 1px solid #eee;
 }
+
 .mobile-menu.open {
   display: flex;
   flex-direction: column;
@@ -153,27 +168,29 @@ ul {
   position: relative;
   overflow: hidden;
 }
+
 .hero-bg-lines {
   position: absolute;
   inset: 0;
-  background: repeating-conic-gradient(
-    from 45deg at 120% 120%,
-    transparent 0deg 10deg,
-    rgba(75, 101, 39, 0.05) 10deg 11deg
-  );
+  background: repeating-conic-gradient(from 45deg at 120% 120%,
+      transparent 0deg 10deg,
+      rgba(75, 101, 39, 0.05) 10deg 11deg);
   pointer-events: none;
 }
+
 .pricing-hero h1 {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 16px;
   letter-spacing: -1px;
 }
+
 .pricing-hero .subtext {
   font-size: 18px;
   color: #555;
   margin-bottom: 40px;
 }
+
 .pricing-toggle {
   display: inline-flex;
   background: #fff;
@@ -181,6 +198,7 @@ ul {
   border-radius: 10px;
   border: 1px solid #ddd;
 }
+
 .toggle-option {
   padding: 8px 16px;
   font-size: 14px;
@@ -188,6 +206,7 @@ ul {
   cursor: pointer;
   border-radius: 4px;
 }
+
 .toggle-option.active {
   background: var(--color-dark-green);
   color: #fff;
@@ -197,12 +216,14 @@ ul {
 .pricing-tiers-section {
   padding: 80px 0px;
 }
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   align-items: stretch;
 }
+
 .pricing-card {
   background: #fff;
   border: 1px solid #e0e0e0;
@@ -210,10 +231,12 @@ ul {
   padding: 32px 24px;
   position: relative;
 }
+
 .pricing-card.popular {
   border: 2px solid var(--color-dark-green);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
+
 .popular-tag {
   position: absolute;
   top: 0;
@@ -227,28 +250,33 @@ ul {
   padding: 4px;
   border-radius: 10px 10px 0 0;
 }
+
 .pricing-card h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
 }
+
 .pricing-card .desc {
   font-size: 13px;
   color: #666;
   margin-bottom: 24px;
   min-height: 40px;
 }
+
 .pricing-card .price {
   font-size: 24px;
   font-weight: 800;
   color: #111;
   margin-bottom: 24px;
 }
+
 .pricing-card .price .period {
   font-size: 13px;
   font-weight: 400;
   color: #666;
 }
+
 .btn-outline {
   display: block;
   width: 100%;
@@ -261,6 +289,7 @@ ul {
   font-size: 14px;
   margin-bottom: 24px;
 }
+
 .btn-solid {
   display: block;
   width: 100%;
@@ -273,6 +302,7 @@ ul {
   font-size: 14px;
   margin-bottom: 24px;
 }
+
 .feature-list li {
   display: flex;
   gap: 8px;
@@ -280,12 +310,15 @@ ul {
   color: #444;
   margin-bottom: 12px;
 }
+
 .check {
   color: #aaa;
 }
+
 .check.filled {
   color: var(--color-dark-green);
 }
+
 .check.box {
   color: var(--color-dark-green);
   font-weight: bold;
@@ -293,11 +326,11 @@ ul {
 
 /* --- 3. Add-Ons & 4. Infra & 5. One-Time (Flex Grid Logic) --- */
 .addons-section {
-    background: url("./assets/pricing-bg-2.png") no-repeat center center/cover;
+  background: url("./assets/pricing-bg-2.png") no-repeat center center/cover;
 }
 
 .onetime-section {
-    background: url("./assets/pricing-bg-3.png") no-repeat center center/cover;
+  background: url("./assets/pricing-bg-3.png") no-repeat center center/cover;
 }
 
 .addons-section,
@@ -305,16 +338,19 @@ ul {
 .onetime-section {
   padding: 80px 0;
 }
+
 .section-header {
   text-align: center;
   max-width: 700px;
   margin: 0 auto 60px;
 }
+
 .section-header h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 16px;
 }
+
 .section-header p {
   color: #666;
   font-size: 16px;
@@ -326,15 +362,18 @@ ul {
   justify-content: center;
   gap: 24px;
 }
+
 .addon-card {
   background: #fff;
   border-radius: 12px;
   padding: 24px;
-  width: calc(33.33% - 16px); /* 3 cards per row */
+  width: calc(33.33% - 16px);
+  /* 3 cards per row */
   min-width: 300px;
   display: flex;
   flex-direction: column;
 }
+
 /* Specific Borders for Infrastructure section */
 .border-card {
   border: 1px solid #e0e0e0;
@@ -346,6 +385,7 @@ ul {
   align-items: start;
   margin-bottom: 16px;
 }
+
 .icon-box-lime {
   width: 40px;
   height: 40px;
@@ -356,6 +396,7 @@ ul {
   justify-content: center;
   color: #111;
 }
+
 .icon-box-dark {
   width: 40px;
   height: 40px;
@@ -367,32 +408,38 @@ ul {
   color: #fff;
   margin-bottom: 16px;
 }
+
 .icon-box-lime svg,
 .icon-box-dark svg {
   width: 20px;
   height: 20px;
 }
+
 .price-right {
   text-align: right;
   font-weight: 700;
   font-size: 16px;
 }
+
 .price-right .unit,
 .price-bottom .unit {
   font-size: 12px;
   color: #666;
   font-weight: 400;
 }
+
 .addon-card h3 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 8px;
 }
+
 .addon-card p {
   font-size: 13px;
   color: #666;
   margin-bottom: auto;
 }
+
 .price-bottom {
   margin-top: 16px;
   font-weight: 700;
@@ -407,16 +454,19 @@ ul {
   font-size: 10px;
   margin-bottom: 16px;
 }
+
 .price-bold {
   font-weight: 700;
   color: var(--color-dark-green);
   margin-top: 16px;
   font-size: 16px;
 }
+
 .quote-card {
   background: var(--color-yellow-bg);
   border: none;
 }
+
 .btn-solid.dark {
   background: #4b5e28;
   border: none;
@@ -431,10 +481,12 @@ ul {
   padding: 80px 0;
   background: #fff;
 }
+
 .faq-list {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .faq-item {
   display: flex;
   justify-content: space-between;
@@ -444,6 +496,7 @@ ul {
   font-weight: 600;
   cursor: pointer;
 }
+
 .plus {
   font-size: 24px;
   font-weight: 300;
@@ -454,25 +507,30 @@ ul {
   padding: 0 0 80px;
   background: #fff;
 }
+
 .ready-card {
   background: var(--color-yellow-bg);
   border-radius: 24px;
   padding: 80px 40px;
   text-align: center;
 }
+
 .ready-card h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 16px;
 }
+
 .ready-card p {
   margin-bottom: 32px;
 }
+
 .cta-buttons {
   display: flex;
   justify-content: center;
   gap: 16px;
 }
+
 .btn-outline.dark {
   border-color: #4b5e28;
   color: #4b5e28;
@@ -490,6 +548,7 @@ ul {
   font-size: 14px;
   color: #333;
 }
+
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -497,24 +556,29 @@ ul {
   gap: 40px;
   margin-bottom: 40px;
 }
+
 .footer-links-grid {
   display: flex;
   gap: 60px;
 }
+
 .footer-links-grid h4 {
   font-weight: 700;
   margin-bottom: 12px;
 }
+
 .footer-links-grid a {
   color: #555;
   display: block;
   margin-bottom: 8px;
 }
+
 .contact-details p {
   font-size: 13px;
   margin-bottom: 8px;
   color: #555;
 }
+
 .footer-newsletter {
   display: flex;
   justify-content: space-between;
@@ -524,6 +588,7 @@ ul {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
 }
+
 .nl-form input {
   padding: 10px;
   border: 1px solid #ccc;
@@ -531,6 +596,7 @@ ul {
   width: 250px;
   margin-right: 10px;
 }
+
 .btn-dark {
   background: var(--color-dark-green);
   color: #fff !important;
@@ -539,6 +605,7 @@ ul {
   border: none;
   font-weight: 600;
 }
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -552,42 +619,53 @@ ul {
   .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .addon-card {
     width: calc(50% - 12px);
   }
+
   .nav-menu,
   .nav-actions {
     display: none;
   }
+
   .hamburger {
     display: flex;
   }
+
   .footer-links-grid {
     flex-wrap: wrap;
     gap: 30px;
   }
 }
+
 @media (max-width: 600px) {
   .pricing-grid {
     grid-template-columns: 1fr;
   }
+
   .addon-card {
     width: 100%;
   }
+
   .cta-buttons {
     flex-direction: column;
   }
+
   .pricing-hero h1 {
     font-size: 32px;
   }
+
   .footer-newsletter {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
+
   .nl-form {
     width: 100%;
   }
+
   .nl-form input {
     width: 100%;
     margin-bottom: 10px;

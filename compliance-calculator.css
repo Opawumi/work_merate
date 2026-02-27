@@ -6,7 +6,8 @@
   --color-dark-green: #4f6f2f;
   --color-darker-green: #384e20;
   --color-lime-accent: #dcee60;
-  --color-yellow-bg: #ebf2af; /* The light yellow header color */
+  --color-yellow-bg: #ebf2af;
+  /* The light yellow header color */
   --color-cream-bg: #f9f9f4;
   --color-border: #e0e0e0;
 }
@@ -16,6 +17,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--font-family);
   color: var(--color-text-main);
@@ -23,24 +25,24 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 ul {
   list-style: none;
 }
+
 img {
   max-width: 100%;
   display: block;
 }
 
 /* Utilities */
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
+/* Container is inherited from shared-nav-footer.css */
+
 .bg-cream {
   background-color: var(--color-cream-bg);
 }
@@ -55,18 +57,21 @@ img {
   position: relative;
   z-index: 100;
 }
+
 .nav-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   font-size: 24px;
   font-weight: 800;
   display: flex;
   align-items: center;
 }
+
 .bag-icon {
   width: 16px;
   height: 12px;
@@ -76,6 +81,7 @@ img {
   position: relative;
   margin: 0 1px;
 }
+
 .bag-icon::after {
   content: "";
   position: absolute;
@@ -86,10 +92,12 @@ img {
   background: var(--color-dark-green);
   border-radius: 50%;
 }
+
 .nav-menu {
   display: flex;
   gap: 32px;
 }
+
 .nav-link {
   font-size: 14px;
   font-weight: 500;
@@ -97,15 +105,18 @@ img {
   align-items: center;
   gap: 4px;
 }
+
 .nav-actions {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
 .login-link {
   font-weight: 600;
   font-size: 14px;
 }
+
 .btn-nav {
   background: var(--color-dark-green);
   color: #fff;
@@ -114,17 +125,20 @@ img {
   font-weight: 600;
   font-size: 14px;
 }
+
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
 }
+
 .hamburger span {
   width: 24px;
   height: 3px;
   background: #000;
 }
+
 .mobile-menu {
   display: none;
   position: absolute;
@@ -135,6 +149,7 @@ img {
   padding: 20px;
   border-bottom: 1px solid #eee;
 }
+
 .mobile-menu.open {
   display: flex;
   flex-direction: column;
@@ -148,6 +163,7 @@ img {
   position: relative;
   overflow: hidden;
 }
+
 .hero-bg-lines {
   position: absolute;
   top: 0;
@@ -155,13 +171,11 @@ img {
   bottom: 0;
   left: 0;
   /* Sunburst pattern */
-  background: repeating-conic-gradient(
-    from 45deg at 120% 120%,
-    transparent 0deg,
-    transparent 10deg,
-    #a8b588 10deg,
-    #a8b588 10.5deg
-  );
+  background: repeating-conic-gradient(from 45deg at 120% 120%,
+      transparent 0deg,
+      transparent 10deg,
+      #a8b588 10deg,
+      #a8b588 10.5deg);
   opacity: 0.15;
   pointer-events: none;
   z-index: 0;
@@ -184,11 +198,13 @@ img {
   margin-bottom: 24px;
   color: #444;
 }
+
 .crumb-arrow {
   width: 12px;
   height: 12px;
   fill: #666;
 }
+
 h1 {
   font-size: 48px;
   font-weight: 800;
@@ -197,6 +213,7 @@ h1 {
   letter-spacing: -1px;
   line-height: 1.1;
 }
+
 .hero-description {
   font-size: 17px;
   margin-bottom: 40px;
@@ -209,6 +226,7 @@ h1 {
   flex-direction: column;
   gap: 16px;
 }
+
 .feature-bullets li {
   display: flex;
   align-items: center;
@@ -217,15 +235,18 @@ h1 {
   font-size: 14px;
   color: #222;
 }
+
 .bullet-icon {
   width: 20px;
   height: 20px;
-  background: #d4dfa8; /* Light olive circle */
+  background: #d4dfa8;
+  /* Light olive circle */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .inner-dot {
   width: 6px;
   height: 6px;
@@ -249,6 +270,7 @@ h1 {
   gap: 16px;
   border-bottom: 1px solid #e0e6c5;
 }
+
 .header-icon {
   width: 40px;
   height: 40px;
@@ -260,16 +282,19 @@ h1 {
   color: var(--color-yellow-bg);
   flex-shrink: 0;
 }
+
 .header-icon svg {
   width: 20px;
   height: 20px;
 }
+
 .header-text h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 4px;
   color: #111;
 }
+
 .header-text p {
   font-size: 13px;
   color: #444;
@@ -288,16 +313,19 @@ h1 {
   flex-direction: column;
   gap: 16px;
 }
+
 .section-label {
   display: flex;
   gap: 12px;
   align-items: start;
   margin-bottom: 8px;
 }
+
 .label-icon {
   width: 32px;
   height: 32px;
-  background: #ebf2af; /* Lighter yellow circle */
+  background: #ebf2af;
+  /* Lighter yellow circle */
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -305,15 +333,18 @@ h1 {
   color: var(--color-darker-green);
   flex-shrink: 0;
 }
+
 .label-icon svg {
   width: 16px;
   height: 16px;
 }
+
 .section-label h4 {
   font-size: 15px;
   font-weight: 700;
   color: #111;
 }
+
 .section-label p {
   font-size: 12px;
   color: #666;
@@ -331,6 +362,7 @@ h1 {
   background: #fff;
   font-family: inherit;
 }
+
 .form-group input:focus,
 .form-group select:focus {
   border-color: var(--color-dark-green);
@@ -348,6 +380,7 @@ h1 {
   margin-top: 10px;
   transition: background 0.2s;
 }
+
 .btn-calculate:hover {
   background: var(--color-darker-green);
 }
@@ -359,6 +392,7 @@ h1 {
   font-size: 14px;
   color: #333;
 }
+
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -366,19 +400,23 @@ h1 {
   gap: 40px;
   margin-bottom: 40px;
 }
+
 .footer-links-grid {
   display: flex;
   gap: 60px;
 }
+
 .footer-links-grid h4 {
   font-weight: 700;
   margin-bottom: 12px;
 }
+
 .footer-links-grid a {
   color: #555;
   display: block;
   margin-bottom: 8px;
 }
+
 .footer-newsletter {
   display: flex;
   justify-content: space-between;
@@ -388,6 +426,7 @@ h1 {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
 }
+
 .nl-form input {
   padding: 10px;
   border: 1px solid #ccc;
@@ -395,6 +434,7 @@ h1 {
   width: 250px;
   margin-right: 10px;
 }
+
 .btn-dark {
   background: var(--color-dark-green);
   color: #fff;
@@ -403,6 +443,7 @@ h1 {
   border: none;
   font-weight: 600;
 }
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -413,28 +454,35 @@ h1 {
 
 /* Responsive */
 @media (max-width: 992px) {
+
   .nav-menu,
   .nav-actions {
     display: none;
   }
+
   .hamburger {
     display: flex;
   }
+
   .calc-layout {
     grid-template-columns: 1fr;
   }
+
   .footer-links-grid {
     flex-wrap: wrap;
     gap: 30px;
   }
+
   .footer-newsletter {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
+
   .nl-form {
     width: 100%;
   }
+
   .nl-form input {
     width: 100%;
     margin-bottom: 10px;

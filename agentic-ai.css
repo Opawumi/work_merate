@@ -42,15 +42,10 @@ img {
 /* ===========================================
    Container — matches homepage + navbar gutter
    =========================================== */
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 100px;
-}
+/* Container is defined in shared-nav-footer.css */
 
-.navbar {
-  padding: 0 20px;
-}
+
+
 
 .section-padding {
   padding: 96px 0;
@@ -61,7 +56,15 @@ img {
 }
 
 .bg-cream {
-  background-color: var(--color-cream-bg);
+  background-color: #EDEFE8;
+}
+
+.section-union-bg {
+  background-color: #EDEFE8;
+  background-image: url("./assets/Union.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
 .mb-6 {
@@ -95,7 +98,7 @@ img {
 /* Container spans full width inside hero */
 .hero-agentic>.container.hero-container {
   max-width: 1440px;
-  padding: 0 100px;
+  padding: 0 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -267,7 +270,7 @@ img {
 }
 
 .image-content img {
-  border-radius: 10px;
+  border-radius: 16px;
   width: 180vh;
   height: 88%;
   object-fit: cover;
@@ -277,14 +280,6 @@ img {
 /* ===========================================
    3. Core Capabilities
    =========================================== */
-.core-capabilities {
-  background-color: var(--color-cream-bg);
-  background-image: url("./assets/Union.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-
 .section-header {
   text-align: center;
   max-width: 640px;
@@ -311,28 +306,41 @@ img {
 }
 
 .grid-2-center {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 20px;
-  max-width: 820px;
-  /* margin: 20px auto 0; */
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .card-white {
   background: #fff;
   border-radius: 16px;
-  padding: 32px 28px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  padding: 40px 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card-white:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(74, 97, 23, 0.08);
 }
 
 .card-white2 {
   background: #fff;
   border-radius: 16px;
-  padding: 32px 28px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  padding: 40px 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   border: 1px solid #f0f0f0;
-  width: 117vh;
+  width: 640px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-white2:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(74, 97, 23, 0.08);
 }
 
 .icon-box-yellow {
@@ -381,12 +389,13 @@ img {
   padding: 36px 28px 28px;
   position: relative;
   background: #fff;
+  margin-top: 10px;
 }
 
 .step-badge {
   background: #E8EC67;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -394,8 +403,8 @@ img {
   font-size: 14px;
   border-radius: 6px;
   position: absolute;
-  top: -21px;
-  left: -10px;
+  top: -24px;
+  left: -20px;
   color: #111;
 }
 
@@ -430,7 +439,7 @@ img {
 }
 
 .icon-circle-yellow {
-  background: #E8EC67;
+  background: var(--color-lime-bg);
   width: 40px;
   height: 40px;
   min-width: 40px;
@@ -471,8 +480,8 @@ img {
 }
 
 .icon-box-lime {
-  width: 39px;
-  height: 39px;
+  width: 36px;
+  height: 36px;
   background: #E8EC67;
   border-radius: 8px;
   display: flex;
@@ -514,7 +523,7 @@ img {
 }
 
 .cta-banner p {
-  max-width: 890px;
+  max-width: 640px;
   margin: 0 auto 36px;
   font-size: 16px;
   color: #333;
@@ -528,7 +537,7 @@ img {
 }
 
 .btn-dark {
-  background: #4A6117 !important;
+  background: var(--color-dark-green) !important;
   color: #fff !important;
   padding: 14px 32px;
   border-radius: 6px;
