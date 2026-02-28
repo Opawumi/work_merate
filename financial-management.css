@@ -298,10 +298,11 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  align-items: center;
+  align-items: start;
 }
 .cap-intro {
   width: 100%;
+  margin-top: 15%;
 }
 .cap-intro h2 {
   font-size: 36px;
@@ -311,7 +312,7 @@ h1 {
 .cap-intro p {
   font-size: 20px;
   color: #555;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 .nav-arrows .arrow-btn {
   background: transparent;
