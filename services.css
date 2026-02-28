@@ -31,7 +31,8 @@ body {
 
 /* Left Content Section */
 .banner-content {
-  padding: 3rem 3rem 3rem 80px;
+  padding: 3rem 80px;
+  /* Reduced from 80px */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,7 +138,7 @@ body {
   grid-template-columns: 1fr 1.2fr;
   gap: 3rem;
   align-items: center;
-  padding: 2rem 0 2rem 0rem ;
+  padding: 2rem 0 2rem 0rem;
   position: relative;
 }
 
@@ -155,7 +156,7 @@ body {
   font-weight: 700;
   margin-bottom: 0.1rem;
   color: #1a1a1a;
-  
+
 }
 
 .tax-intro {
@@ -1465,15 +1466,20 @@ body {
   }
 
   .ind-sol-wrapper {
-    padding: 40px 16px;
+    padding: 48px 24px;
   }
 
   .ind-sol-title {
     font-size: 1.75rem;
+    margin-bottom: 8px;
   }
 
   .ind-sol-card {
     padding: 24px;
+  }
+
+  .ind-sol-header {
+    margin-bottom: 32px;
   }
 }
 
@@ -1794,12 +1800,19 @@ body {
     padding: 2.5rem 2rem;
   }
 
-  .banner-title {
-    font-size: 2.25rem;
+  .banner-graphic {
+    min-height: 250px;
+    background-size: cover;
   }
 
-  .banner-graphic {
-    min-height: 200px;
+  .banner-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .banner-content {
+    padding: 40px 24px;
+    text-align: left;
   }
 
   .vertical-divider {
