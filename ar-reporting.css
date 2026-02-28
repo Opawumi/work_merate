@@ -1701,3 +1701,11 @@ img { max-width: 100%; display: block; }
         right: 0;
     }
 }
+
+.crumb-arrow-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 2px;
+  border-radius: 4px;
+}

@@ -1,7 +1,7 @@
 /* Shared navbar + footer styles (from managed) */
 :root {
   --color-dark-green: #4f6f2f;
-  --color-cream-bg: #f9f9f4;
+  --color-cream-bg: #edefe8;
 }
 
 /* --- Navigation --- */
@@ -631,8 +631,10 @@
 
 .footer-newsletter {
   display: grid;
-  grid-template-columns: minmax(90px, 320px) minmax(300px, 520px) minmax(350px,
-      360px);
+  grid-template-columns: minmax(90px, 320px) minmax(300px, 520px) minmax(
+      350px,
+      360px
+    );
   gap: 20px;
   align-items: center;
   padding: 40px 0;

@@ -5,10 +5,10 @@
   --color-text-light: #555;
   --color-dark-green: #4f6f2f;
   --color-lime-accent: #dcee60;
-  --color-cream-bg: #f9f9f4;
+  --color-cream-bg: #edefe8;
   --color-peach-bg: #fcefe9;
   --color-lines: #d97e4a;
-  --color-yellow-cta: #eff69e;
+  --color-yellow-cta: #e8ec67;
   --color-border: #eeeeee;
 }
 
@@ -159,7 +159,8 @@ img {
 
 /* --- 1. Hero Section (Tax Laws) --- */
 .hero-laws {
-  background: url("./assets/productivity-manage-hero.png") no-repeat center/cover;
+  background: url("./assets/productivity-manage-hero.png") no-repeat
+    center/cover;
   position: relative;
   padding: 100px 0;
   overflow: hidden;

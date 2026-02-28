@@ -6,9 +6,9 @@
   --color-dark-green: #4f6f2f;
   --color-darker-green: var(--color-dark-green);
   --color-lime-accent: #dcee60;
-  --color-cream-bg: #f9f9f4;
+  --color-cream-bg: #edefe8;
   --color-peach-bg: #f0f2eb; /* Matching the calendar hero bg */
-  --color-yellow-cta: #eff69e;
+  --color-yellow-cta: #e8ec67;
   --color-border: #eeeeee;
 
   /* Tax Type Colors */
@@ -189,52 +189,52 @@ img {
 }
 /* --- Stats Section --- */
 .stats-parent {
-    padding: 20px 0 40px 0;
+  padding: 20px 0 40px 0;
 }
 .stats-section {
-    background-color: #fff;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee; /* Optional: adds separation if needed */
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee; /* Optional: adds separation if needed */
 }
 
 .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 Equal Columns */
-    gap: 40px;
-    text-align: center;
-    max-width: 900px; /* Constrain width to keep items closer like the design */
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Equal Columns */
+  gap: 40px;
+  text-align: center;
+  max-width: 900px; /* Constrain width to keep items closer like the design */
+  margin: 0 auto;
 }
 
 .stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stat-number {
-    font-size: clamp(2.125rem, -1.625rem + 6.6667vw, 3.375rem);
-    font-weight: 800;
-    color: #111;
-    line-height: 1;
-    margin-bottom: 16px;
-    letter-spacing: -1px;
-    font-family: 'Inter', sans-serif;
+  font-size: clamp(2.125rem, -1.625rem + 6.6667vw, 3.375rem);
+  font-weight: 800;
+  color: #111;
+  line-height: 1;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+  font-family: "Inter", sans-serif;
 }
 
 .stat-label {
-    font-size: 16px;
-    color: #666;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 
 /* Responsive: Stack on mobile */
 @media (max-width: 768px) {
-    .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
 }
 .hero-content {
   max-width: 600px;

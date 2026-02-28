@@ -6,8 +6,8 @@
   --color-dark-green: #4f6f2f;
   --color-darker-green: #384e20;
   --color-lime-accent: #dcee60;
-  --color-cream-bg: #f9f9f4;
-  --color-yellow-cta: #eff69e;
+  --color-cream-bg: #edefe8;
+  --color-yellow-cta: #e8ec67;
   --color-border: #eeeeee;
 }
 
@@ -323,7 +323,7 @@ h1 {
 }
 .tab-btn.active {
   background: var(--color-darker-green);
-  color: #F0F299 !important;
+  color: #f0f299 !important;
   border-color: var(--color-darker-green);
 }
 

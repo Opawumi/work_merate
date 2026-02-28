@@ -5,10 +5,10 @@
   --color-text-light: #555;
   --color-dark-green: #4f6f2f;
   --color-lime-accent: #dcee60;
-  --color-cream-bg: #f9f9f4;
+  --color-cream-bg: #edefe8;
   --color-peach-bg: #fff5ec; /* Peach/Pink tone from hero */
   --color-lines: #d97e4a; /* Rust orange for lines */
-  --color-yellow-cta: #eff69e;
+  --color-yellow-cta: #e8ec67;
   --color-border: #eeeeee;
 }
 
@@ -43,7 +43,7 @@ img {
   padding: 0 24px;
 }
 .section-padding {
-  padding: 25px 0;
+  padding: 80px 0;
 }
 .bg-white {
   background-color: #fff;
@@ -156,7 +156,8 @@ img {
 
 /* --- 1. Hero Section (Productivity) --- */
 .hero-prod {
-  background: url("./assets/productivity-manage-hero.png") no-repeat center/cover;
+  background: url("./assets/productivity-manage-hero.png") no-repeat
+    center/cover;
   position: relative;
   padding: 100px 0;
   overflow: hidden;
@@ -180,7 +181,7 @@ img {
   z-index: 0;
 }
 .hero-content {
-  max-width: 600px;
+  max-width: 710px;
   position: relative;
   z-index: 2;
 }
@@ -199,7 +200,7 @@ img {
 }
 h1 {
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 24px;
   color: #111;
   letter-spacing: -1px;
@@ -231,13 +232,15 @@ h1 {
 /* --- 2 & 5. Intro & Integration (EQUAL HEIGHT LOGIC) --- */
 .equal-height-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 0.6fr 1fr;
+
+  gap: 30px;
   /* CRITICAL: Stretches columns to same height */
   align-items: stretch;
 }
-/* Reversing logic is handled by HTML order in integration section for cleaner CSS, 
-   but can use direction:rtl if needed. Here we assume direct placement. */
+.equal-height-row.second {
+  grid-template-columns: 1fr 0.6fr;
+}
 
 .text-content {
   display: flex;
@@ -247,7 +250,7 @@ h1 {
 .text-content h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .icon-list-grid {
   display: grid;
@@ -258,11 +261,15 @@ h1 {
 .icon-list-grid li {
   display: flex;
   gap: 12px;
-  align-items: start;
+  align-items: center;
   font-size: 14px;
   font-weight: 600;
   color: #222;
 }
+.icon-list-grid li img {
+  width: 48px;
+}
+
 .icon-circle-lime {
   background: #ebf2af;
   color: var(--color-dark-green);
@@ -282,7 +289,7 @@ h1 {
   min-height: 350px;
 }
 .image-content img {
-  border-radius: 12px;
+  border-radius: 8px;
   width: 100%;
   height: 100%;
   object-fit: cover; /* Fill the area without distortion */
@@ -291,14 +298,20 @@ h1 {
 /* --- 3. Core Capabilities (Horizontal Scroll) --- */
 .capabilities-layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: start;
 }
+.bg-line {
+  background: url("./assets/tax-management/bg-lines.png") no-repeat center/cover;
+}
+
+.cap-intro {
+  margin-top: 15%;
+}
 .cap-intro h2 {
   font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 16px;
+  font-weight: 700;
 }
 .cap-intro p {
   font-size: 16px;
@@ -306,40 +319,59 @@ h1 {
   margin-bottom: 32px;
 }
 .nav-arrows .arrow-btn {
-  background: #ebf2af;
+  background: transparent;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  font-size: 18px;
   margin-right: 10px;
   cursor: pointer;
-  transition: 0.2s;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.nav-arrows .arrow-btn:hover {
-  background: #dce49e;
+.arrow-bg,
+.arrow-path {
+  transition: fill 0.3s ease;
+}
+.nav-arrows .arrow-btn:hover .arrow-bg {
+  fill: #4a6117;
+}
+.nav-arrows .arrow-btn:hover .arrow-path {
+  fill: #e8ec67;
+}
+.nav-arrows .arrow-btn:disabled {
+  cursor: not-allowed;
+}
+.nav-arrows .arrow-btn:disabled .arrow-bg,
+.nav-arrows .arrow-btn:disabled:hover .arrow-bg {
+  fill: #e8ec67;
+  opacity: 0.5;
+}
+.nav-arrows .arrow-btn:disabled .arrow-path,
+.nav-arrows .arrow-btn:disabled:hover .arrow-path {
+  fill: #4a6117;
 }
 
 .cap-cards-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 520px;
+  margin-left: auto;
+}
+.cap-cards-track {
   display: flex;
   gap: 24px;
-  overflow-x: auto;
-  padding-bottom: 20px;
-  scroll-behavior: smooth;
-  /* Hide scrollbar */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  transition: transform 0.4s ease-in-out;
+  width: max-content;
 }
-.cap-cards-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
 .cap-card {
   background: #e9f0e5;
-  border-radius: 12px;
-  padding: 32px;
-  min-width: 320px;
-  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  width: 320px;
+  border: 0.5px solid var(--color-dark-green);
 }
 .cap-card h3 {
   font-size: 20px;
@@ -348,9 +380,38 @@ h1 {
 }
 .cap-card p {
   font-size: 14px;
-  color: #444;
+  color: #222;
   margin-bottom: 20px;
   line-height: 1.5;
+}
+.left-gradient-transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(-90deg, transparent, #fff 90%);
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+.right-gradient-transparent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(90deg, transparent, #fff 90%);
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+.right-gradient-transparent.is-hidden,
+.left-gradient-transparent.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 .icon-box-dark {
   width: 40px;
@@ -390,8 +451,8 @@ h1 {
 /* --- 4. Industries Grid --- */
 .section-header {
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 60px;
+  max-width: max-content;
+  margin: 0 auto 36px;
 }
 .section-header h2 {
   font-size: 32px;
@@ -404,7 +465,7 @@ h1 {
   gap: 24px;
 }
 .card-outline {
-  border: 1px solid #ddd;
+  border: 0.5px solid var(--color-dark-green);
   border-radius: 12px;
   padding: 24px;
   background: #fff;
@@ -424,7 +485,6 @@ h1 {
   color: #666;
 }
 
-/* --- 6. CTA --- */
 .cta-banner {
   background: var(--color-yellow-cta);
   border-radius: 24px;
@@ -552,4 +612,12 @@ h1 {
     width: 100%;
     margin-bottom: 10px;
   }
+}
+
+.crumb-arrow-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 2px;
+  border-radius: 4px;
 }
