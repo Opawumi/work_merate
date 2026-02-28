@@ -57,6 +57,12 @@
   width: 240px;
   height: auto;
 }
+@media (max-width: 393px) {
+  .logo svg {
+    width: 170px;
+    height: auto;
+  }
+}
 
 .bag-icon {
   display: inline-block;
