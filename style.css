@@ -1378,14 +1378,34 @@ h6 {
         width: 100%;
         margin-left: 0;
     }
+
     .integration-container {
         gap: 32px;
     }
+
     .integration-visual img {
         width: 100%;
         height: auto;
         border-radius: 8px;
     }
+
+    .testimonial-author {
+       
+        align-items: start;
+        /* gap: 8px;
+    padding: 1px; */
+        background-color: var(--white);
+        border-radius: 0 var(--radius-lg) 0 0;
+        width: 80% !important;
+        height: 70px;
+    }
+    .author-name{
+        font-size: 11px !important;
+    }
+        .cta-title{
+            
+            width: 100% !important;
+        }
 }
 
 /* ============================================
@@ -1712,11 +1732,24 @@ h6 {
     }
 
     .testimonial-content {
-        padding: 24px;
+        padding: 0 !important;
+        border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .testimonial-text {
-        font-size: var(--font-size-body-medium-mobile);
+        font-size: 14px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        width: auto;
+    }
+
+    .quote-icon {
+        margin: 24px 24px 8px 24px;
+        width: 28px;
+        height: auto;
     }
 
     .author-name {
@@ -1725,18 +1758,14 @@ h6 {
     }
 
     .testimonial-author {
-        width: 100%;
-        /* Fix: Take full width on mobile */
+        width: 85%;
         height: auto;
-        padding: 16px;
-        border-radius: 0 0 var(--radius-xl) var(--radius-xl);
-        /* Rounded bottom for mobile cards */
-    }
-
-    .testimonial-content {
-        padding-bottom: 0;
-        /* Align with author block */
-        border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+        min-height: 54px;
+        padding: 12px 16px;
+        margin: 0 0 0 0 !important;
+        border-radius: 0 var(--radius-lg) 0 0 !important;
+        background-color: var(--white);
+        align-self: flex-start;
     }
 
     /* Built Section Mobile */
@@ -1979,6 +2008,8 @@ h6 {
         padding: 0 24px;
         gap: 24px;
     }
+
+
 }
 
 /* Cookie Consent */
