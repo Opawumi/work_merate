@@ -334,6 +334,24 @@ h6 {
     pointer-events: none;
 }
 
+.hero-icons-mobile {
+    display: none;
+}
+
+@media (max-width: 393px) {
+    .hero-icons img {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        object-fit: contain;
+        display: none !important;
+    }
+
+    .hero-icons-mobile {
+        display: block;
+    }
+}
+
 .hero-icons img {
     width: 100%;
     height: 100%;
@@ -1371,6 +1389,10 @@ h6 {
 }
 
 @media (max-width: 768px) {
+    .integration-section {
+        background-position: center top;
+    }
+
     .integration-visual {
         padding-bottom: 0px;
         margin-top: 0px;
@@ -1390,7 +1412,7 @@ h6 {
     }
 
     .testimonial-author {
-       
+
         align-items: start;
         /* gap: 8px;
     padding: 1px; */
@@ -1399,13 +1421,15 @@ h6 {
         width: 80% !important;
         height: 70px;
     }
-    .author-name{
+
+    .author-name {
         font-size: 11px !important;
     }
-        .cta-title{
-            
-            width: 100% !important;
-        }
+
+    .cta-title {
+
+        width: 100% !important;
+    }
 }
 
 /* ============================================
@@ -1500,14 +1524,15 @@ h6 {
     }
 
     .hero-subtitle {
-        font-size: var(--font-size-body-large-mobile);
+        font-size: 12.2px;
         line-height: 1.4;
         /* Fix: Overlapping text */
         width: 100%;
+        font-weight: 500;
     }
 
     /* Buttons Mobile */
-    .btn-primary,
+
     .btn-outline,
     .btn-white,
     .btn-outline-white {
@@ -1516,9 +1541,15 @@ h6 {
         width: 100%;
     }
 
+    .btn-primary {
+        padding: 12px 24px;
+        width: 50vh !important;
+        font-size: 13px;
+    }
+
     /* Hero Mobile */
     .hero {
-        padding: 60px 0 20px;
+        padding: 20px 0 20px;
         /* Reduced excessive bottom padding */
     }
 
@@ -1598,7 +1629,7 @@ h6 {
     }
 
     .feature-item {
-        gap: 12px;
+        gap: 0px;
     }
 
     .feature-icon {
@@ -1622,7 +1653,7 @@ h6 {
 
     /* How It Works Mobile */
     .how-it-works {
-        padding: 48px 0;
+        padding: 8px 0;
         background-size: cover;
         /* Fix: Prevent background stretching */
     }
@@ -1653,7 +1684,7 @@ h6 {
     }
 
     .step-description {
-        font-size: var(--font-size-body-medium-mobile);
+        font-size: 12px;
     }
 
     .cta-container {
@@ -1803,30 +1834,41 @@ h6 {
 
     /* CTA Section Mobile */
     .cta-section {
-        padding: 48px 0;
+        padding: 40px 0;
     }
 
     .cta-content {
-        padding: 32px 24px;
+        padding: 1px 24px 0 24px;
+        /* Space for image padding */
         flex-direction: column;
-        gap: 24px;
-        align-items: stretch;
-        min-height: auto;
+        gap: 0;
+        align-items: flex-start;
+        min-height: 470px;
+        border-radius: var(--radius-2xl);
+        /* 32px to match figma look */
+        overflow: hidden;
     }
 
     .cta-text-block {
-        gap: 12px;
-        min-width: unset;
+        gap: 6px;
+        z-index: 2;
+        width: 100%;
+        margin-bottom: 164px;
     }
 
     .cta-title {
-        font-size: 22px;
-        line-height: 1.3;
+        font-size: 20px;
+        /* line-height: 0.95; */
+        white-space: normal;
+        font-weight: 800;
+        max-width: 100%;
     }
 
     .cta-description {
         font-size: 14px;
         line-height: 1.5;
+        color: #e6edd8;
+        margin-top: 4px;
     }
 
     .cta-actions {
@@ -1834,20 +1876,29 @@ h6 {
         flex-direction: row;
         gap: 12px;
         width: 100%;
+        margin-top: 12px;
     }
 
     .cta-btn {
         flex: 1;
-        padding: 12px 16px;
-        font-size: 13px;
+        padding: 8px 16px;
+        font-size: 14px;
         text-align: center;
         justify-content: center;
+        height: auto;
+        min-width: unset;
     }
 
     .cta-image {
-        width: 140px;
-        flex: 0 0 140px;
-        align-self: center;
+        width: 55vh;
+        max-width: none;
+        height: auto;
+        margin-bottom: -1px;
+        /* Avoid subpixel gap */
+        align-self: flex-end;
+        object-fit: cover;
+        bottom: -35px;
+        right: 0;
     }
 
     /* Footer Mobile */
@@ -1952,7 +2003,7 @@ h6 {
     }
 
     .section-description {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
     }
 
@@ -1971,7 +2022,7 @@ h6 {
     }
 
     .btn-primary {
-        font-size: 11.5px;
+        font-size: 11.9px;
         width: 90%;
     }
 
@@ -2002,6 +2053,7 @@ h6 {
 
     .integration-section {
         padding: 40px 0;
+        background-position: center top;
     }
 
     .integration-container {
