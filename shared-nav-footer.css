@@ -960,6 +960,19 @@
   .hamburger {
     display: flex;
   }
+
+
+  .footer-section .btn-dark {
+  background-color: #4A6117;
+  color: #fff !important;
+  padding: 0 32px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  top: -90px;
+}
+
 }
 
 li {
