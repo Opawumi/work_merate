@@ -110,7 +110,7 @@ img {
   width: 100%;
 }
 
-.hero-content {   
+.hero-content {
   flex: 0 0 auto;
   max-width: 680px;
   padding: 110px 0 72px;
@@ -221,7 +221,7 @@ img {
 
 .text-content>p {
   font-size: 16px;
-  color: #444;
+  color: #5F5C64;
   line-height: 1.7;
 }
 
@@ -251,8 +251,16 @@ img {
   display: flex;
   gap: 12px;
   font-size: 14px;
-  color: #444;
+  color: #5F5C64;
   line-height: 1.5;
+}
+
+.check-content {
+  display: inline;
+}
+
+.check-content strong {
+  color: #111;
 }
 
 .check-icon-circle {
@@ -600,11 +608,52 @@ img {
   }
 
   .section-padding {
-    padding: 64px 0;
+    padding: 24px 0 15px 0;
   }
 
+  /* .hero-agentic {
+  position: relative;
+  background: url("./assets/hero-Agentic-mobile.png") center center / cover no-repeat;
+  padding: 0;
+  overflow: hidden;
+  color: #fff;
+  min-height: auto;
+  display: flex;
+  align-items: stretch;
+} */
   .hero-agentic {
     min-height: auto;
+  }
+
+  /* .hero-tech-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(221deg, rgba(154, 160, 142, 0) 2.33%, #4A6117 55.97%, #4A6117 24.89%);
+  pointer-events: none;
+} */
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn-hero-primary {
+    width: 100%;
+    text-align: center;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  .btn-hero-text {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff !important;
+    opacity: 1;
+    text-decoration: none;
   }
 
   .hero-agentic>.container.hero-container {
@@ -615,7 +664,7 @@ img {
 
   .hero-content {
     max-width: 100%;
-    padding: 60px 0 48px;
+    padding: 150px 0 48px;
   }
 
   .hero-content h1 {
@@ -639,6 +688,7 @@ img {
     height: auto;
     /* Fix: Allow stacking */
   }
+
 
   .image-content {
     height: auto;
@@ -688,39 +738,113 @@ img {
     max-width: 260px;
     text-align: center;
   }
-  .card-white{
+
+  .card-white {
     padding: 20px 20px;
-  } 
-.card-white2 {
-  background: #fff;
-  border-radius: 16px;
-  padding: 15px 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  border: 1px solid #f0f0f0;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-  
-}
- .card-white2 h3 {
-  font-size: 17px !important;
+  }
+
+  .card-white2 {
+    background: #fff;
+    border-radius: 16px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f0f0f0;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+  }
+
+  .card-white2 h3 {
+    font-size: 17px !important;
+  }
+
+  .card-white2 p {
+    font-size: 13.5px !important;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  /* Why does it matter mobile styles */
+  .highlight-box {
+    border: 1px solid #C5CFB6;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: none;
+    margin-top: 24px;
+  }
+
+  .highlight-box h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .check-list {
+    gap: 20px;
+  }
+
+  .check-list li {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .check-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .check-content strong {
+    font-size: 15px;
+    color: #111;
+    display: block;
+  }
+
+  .check-content span {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #5F5C64;
+    line-height: 1.6;
+  }
+
+  .check-icon-circle {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-width: 2px;
+    margin-top: 22px;
+  }
 }
 
-.card-white2 p {
-  font-size: 13.5px !important;
-  line-height: 1.5;
-  color: #555;
-}
-}
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 28px;
+    font-size: 26px;
+    font-weight: 700;
   }
 
   .section-header h2,
   .text-content h2 {
     font-size: 24px;
   }
+
+  .step-badge {
+    background: #E8EC67;
+    width: 40px;
+    height: 40px; 
+ }
+
+ .process-grid-2x2 {
+  gap: 34px;
+  margin-top: 18px;
 }
 
+.process-box {
+    padding: 16px 28px 28px;
+}
 
+.icon-box-lime {
+    width: 40px;
+    height: 40px;
+}
+
+}
