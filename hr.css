@@ -218,16 +218,15 @@ h1 {
   display: flex;
   gap: 16px;
   align-items: center;
+  font-weight: 500;
 }
 .btn-hero-primary {
   background: var(--color-dark-green);
   color: #fff !important;
   padding: 16px 28px;
   border-radius: 6px;
-  font-weight: 600;
 }
 .btn-hero-secondary {
-  font-weight: 600;
   color: #111;
 }
 
@@ -381,6 +380,7 @@ h1 {
   border: 0.1px solid var(--color-dark-green);
 }
 .right-gradient-transparent {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -568,7 +568,7 @@ h1 {
 }
 
 /* Responsive */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .nav-menu,
   .nav-actions {
     display: none;
@@ -609,6 +609,62 @@ h1 {
   .nl-form input {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .hero-hr {
+    padding: 42px 0;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .text-content h2 {
+    font-size: 22px;
+  }
+  .text-content p {
+    font-size: 16px;
+  }
+  .icon-list-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hr-bg-lines {
+    background-position: left;
+  }
+
+  .cap-intro {
+    margin-top: 0;
+  }
+
+  .cap-cards-wrapper {
+    width: calc(100vw - 2em);
+  }
+
+  .right-gradient-transparent {
+    display: block;
+    display: none;
+  }
+
+  .equal-height-row.second {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cta-banner {
+    padding: 32px;
+  }
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-banner h2 {
+    font-size: 26px;
   }
 }
 
