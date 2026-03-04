@@ -284,11 +284,6 @@ h1 {
   flex-shrink: 0;
 }
 
-.image-content {
-  height: 100%; /* Takes full height of the grid row */
-  width: 100%;
-  min-height: 350px; /* Ensures a minimum height */
-}
 .image-content img {
   border-radius: 8px;
   width: 100%;
