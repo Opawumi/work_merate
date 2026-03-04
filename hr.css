@@ -211,7 +211,7 @@ h1 {
 .hero-description {
   font-size: 17px;
   margin-bottom: 40px;
-  color: #333;
+  color: #121212;
   line-height: 1.6;
 }
 .hero-buttons {
@@ -311,12 +311,13 @@ h1 {
 
 .cap-intro h2 {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 .cap-intro p {
   font-size: 16px;
   color: #555;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 .nav-arrows .arrow-btn {
@@ -504,7 +505,7 @@ h1 {
   max-width: 700px;
   margin: 0 auto 32px;
   font-size: 16px;
-  color: #333;
+  color: #121212;
 }
 .btn-dark {
   background: var(--color-dark-green);
@@ -581,6 +582,10 @@ h1 {
   }
   .hamburger {
     display: flex;
+  }
+
+  .hero-description {
+    line-height: 1.37;
   }
 
   .section-padding {

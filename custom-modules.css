@@ -207,7 +207,7 @@ h1 {
 .hero-description {
   font-size: 17px;
   margin-bottom: 40px;
-  color: #333;
+  color: #121212;
   line-height: 1.6;
 }
 .hero-buttons {
@@ -405,7 +405,7 @@ h1 {
   max-width: 700px;
   margin: 0 auto 32px;
   font-size: 16px;
-  color: #333;
+  color: #121212;
 }
 .cta-actions {
   display: flex;
@@ -490,6 +490,10 @@ h1 {
   }
   .hamburger {
     display: flex;
+  }
+
+  .hero-description {
+    line-height: 1.37;
   }
 
   .equal-height-row {

@@ -3,7 +3,7 @@
   --font-family: "Inter", sans-serif;
   --color-text-main: #111;
   --color-text-light: #555;
-  --color-dark-green: #4f6f2f;
+  --color-dark-green: #4a6117;
   --color-lime-accent: #dcee60;
   --color-cream-bg: #edefe8;
   --color-yellow-cta: #e8ec67;
@@ -209,7 +209,7 @@ h1 {
 .hero-description {
   font-size: 17px;
   margin-bottom: 40px;
-  color: #333;
+  color: #121212;
   line-height: 1.6;
 }
 .hero-buttons {
@@ -505,7 +505,7 @@ h1 {
   max-width: 700px;
   margin: 0 auto 32px;
   font-size: 16px;
-  color: #333;
+  color: #121212;
 }
 .btn-dark {
   background: var(--color-dark-green);
@@ -582,6 +582,10 @@ h1 {
   }
   .hamburger {
     display: flex;
+  }
+
+  .hero-description {
+    line-height: 1.37;
   }
 
   .section-padding {
