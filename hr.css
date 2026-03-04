@@ -3,7 +3,7 @@
   --font-family: "Inter", sans-serif;
   --color-text-main: #111;
   --color-text-light: #555;
-  --color-dark-green: #4f6f2f;
+  --color-dark-green: #4a6117;
   --color-lime-accent: #dcee60;
   --color-cream-bg: #fdfdf0;
   --color-yellow-cta: #e8ec67;
@@ -294,12 +294,6 @@ h1 {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  .equal-height-row .image-content {
-    height: auto;
-  }
-  .image-content img {
-    height: auto;
-  }
 }
 
 /* --- 3. Core HR Capabilities --- */
@@ -406,14 +400,14 @@ h1 {
   margin-bottom: 12px;
 }
 .cap-card p {
-  font-size: 14px;
+  font-size: 16px;
   color: #222;
   margin-bottom: 20px;
   line-height: 1.5;
 }
 .icon-box-dark {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background: var(--color-dark-green);
   border-radius: 8px;
   display: flex;
@@ -616,6 +610,11 @@ h1 {
   .cap-intro h2 {
     letter-spacing: -2px;
   }
+
+  .cap-intro p {
+    font-size: 18px;
+  }
+
   .cap-cards-wrapper {
     overflow-x: scroll;
   }
@@ -623,7 +622,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .icon-box-dark {
+  .icon-box-dark:not(.cap-card > .icon-box-dark) {
     width: 36px;
     height: 36px;
   }
@@ -688,6 +687,11 @@ h1 {
 
   .equal-height-row.second {
     grid-template-columns: 1fr !important;
+  }
+
+  .equal-height-row .image-content {
+    aspect-ratio: 7 / 5;
+    height: auto;
   }
 
   .cta-banner {

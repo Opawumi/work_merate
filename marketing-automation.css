@@ -317,12 +317,13 @@ h1 {
 }
 .cap-intro h2 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   width: 100%;
 }
 .cap-intro p {
   font-size: 20px;
   color: #555;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 .nav-arrows .arrow-btn {
@@ -387,7 +388,7 @@ h1 {
   margin-bottom: 12px;
 }
 .cap-card p {
-  font-size: 14px;
+  font-size: 16px;
   color: #222;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -427,8 +428,8 @@ h1 {
   pointer-events: none;
 }
 .icon-box-dark {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background: var(--color-dark-green);
   border-radius: 8px;
   display: flex;
@@ -624,15 +625,16 @@ h1 {
     direction: ltr;
   }
   /* Reset image height so it doesn't stretch strangely when stacked */
-  .image-content {
-    height: auto;
-  }
 
   .capabilities-layout {
     grid-template-columns: 1fr;
   }
   .cap-intro h2 {
     letter-spacing: -2px;
+  }
+
+  .cap-intro p {
+    font-size: 18px;
   }
 
   .cap-cards-wrapper {
@@ -642,7 +644,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .icon-box-dark {
+  .icon-box-dark:not(.cap-card > .icon-box-dark) {
     width: 36px;
     height: 36px;
   }
@@ -702,6 +704,11 @@ h1 {
 
   .equal-height-row.second {
     grid-template-columns: 1fr !important;
+  }
+
+  .equal-height-row .image-content {
+    aspect-ratio: 7 / 5;
+    height: auto;
   }
 
   .cta-banner {

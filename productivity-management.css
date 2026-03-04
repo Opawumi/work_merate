@@ -282,11 +282,6 @@ h1 {
   flex-shrink: 0;
 }
 
-.image-content {
-  height: 100%;
-  width: 100%;
-  min-height: 350px;
-}
 .image-content img {
   border-radius: 8px;
   width: 100%;
@@ -311,12 +306,13 @@ h1 {
 }
 .cap-intro h2 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 .cap-intro p {
   font-size: 20px;
   color: #555;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 .nav-arrows .arrow-btn {
@@ -380,7 +376,7 @@ h1 {
   margin-bottom: 12px;
 }
 .cap-card p {
-  font-size: 14px;
+  font-size: 16px;
   color: #222;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -416,8 +412,8 @@ h1 {
   pointer-events: none;
 }
 .icon-box-dark {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background: var(--color-dark-green);
   border-radius: 8px;
   display: flex;
@@ -613,10 +609,6 @@ h1 {
     height: auto;
     min-height: auto;
   }
-  .image-content img {
-    height: auto;
-    width: 100%;
-  }
 
   .capabilities-layout {
     grid-template-columns: 1fr;
@@ -625,7 +617,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .icon-box-dark {
+  .icon-box-dark:not(.cap-card > .icon-box-dark) {
     width: 36px;
     height: 36px;
   }
@@ -680,6 +672,10 @@ h1 {
     letter-spacing: -2px;
   }
 
+  .cap-intro p {
+    font-size: 18px;
+  }
+
   .cap-cards-wrapper {
     overflow-x: scroll;
     width: calc(100vw - 2em);
@@ -687,6 +683,11 @@ h1 {
 
   .equal-height-row.second {
     grid-template-columns: 1fr !important;
+  }
+
+  .equal-height-row .image-content {
+    aspect-ratio: 7 / 5;
+    height: auto;
   }
 
   .right-gradient-transparent {

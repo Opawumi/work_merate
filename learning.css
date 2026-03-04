@@ -468,9 +468,7 @@ h1 {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .image-content {
-    height: auto;
-  }
+
   .feature-grid-2col {
     grid-template-columns: 1fr;
   }

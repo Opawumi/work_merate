@@ -264,11 +264,6 @@ h1 {
   width: 40px;
 }
 
-.image-content {
-  height: 100%;
-  width: 100%;
-  min-height: 350px;
-}
 .image-content img {
   border-radius: 8px;
   width: 100%;
@@ -333,8 +328,8 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 .icon-box-dark {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background: var(--color-dark-green);
   border-radius: 8px;
   display: flex;
@@ -500,9 +495,6 @@ h1 {
   .equal-height-row {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-  .image-content {
-    height: auto;
   }
 
   .grid-3 {
