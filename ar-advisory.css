@@ -35,11 +35,15 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   display: block;
 }
 
 /* --- Navigation Styles --- */
+.wm-crumb-link{
+font-size: 14px;
+
+}
 .wm-nav-wrapper {
     /* Variables */
     --wm-nav-height: 80px;
@@ -286,7 +290,7 @@ img {
 
 /* Content Wrapper (Limits width so text doesn't overlap the graphic area) */
 .wm-advisory-content {
-    max-width: 750px;
+    max-width: 850px;
     position: relative;
     z-index: 10;
 }
@@ -295,7 +299,7 @@ img {
 .wm-breadcrumbs {
     font-size: 0.85rem;
     font-weight: 500;
-    color: var(--wm-text-crumb);
+    color: #000;
     margin-bottom: 24px;
     display: flex;
     align-items: center;
@@ -314,7 +318,7 @@ img {
 
 /* Typography */
 .wm-hero-title {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     line-height: 1.1;
     font-weight: 800;
     color: var(--wm-text-main);
@@ -426,7 +430,7 @@ img {
     display: flex;
     align-items: stretch;
     /* Forces equal height for image and text */
-    gap: 40px;
+    gap: 30px;
 }
 
 /* Image Column */
@@ -459,7 +463,7 @@ img {
 
 /* Typography */
 .wm-reactive-title {
-    font-size: 2.25rem;
+    font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -500,7 +504,7 @@ img {
 .wm-icon-target {
     width: 40px;
     height: 40px;
-    background-color: var(--wm-lime-light);
+    background-color: #E8EC67;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -576,7 +580,7 @@ img {
 /* --- Header --- */
 .wm-wwd-header {
     text-align: center;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto 40px auto;
 }
 
@@ -633,7 +637,7 @@ img {
 .wm-icon-box {
     width: 48px;
     height: 48px;
-    background-color: var(--wm-icon-bg);
+    background-color: #E8EC67;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -751,7 +755,7 @@ img {
     display: flex;
     align-items: stretch;
     /* Forces equal height */
-    gap: 60px;
+    gap: 10px;
     margin-bottom: 60px;
 }
 
@@ -943,7 +947,7 @@ img {
 }
 
 .wm-pathways-header h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 800;
     margin-bottom: 16px;
     color: var(--wm-text-head);
@@ -991,7 +995,7 @@ img {
 }
 
 .wm-path-img img {
-    width: 100%;
+    width: 506px;
     height: 100%;
     /* Fills the container height */
     object-fit: cover;
@@ -1003,7 +1007,7 @@ img {
 
 /* --- Text Content --- */
 .wm-path-text h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.3;
@@ -1011,7 +1015,7 @@ img {
 }
 
 .wm-path-desc {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     color: var(--wm-text-body);
     margin-bottom: 30px;
@@ -1034,9 +1038,9 @@ img {
 
 /* --- Icon Construction (Double Circle) --- */
 .wm-icon-double {
-    width: 30px;
-    height: 30px;
-    background-color: var(--wm-lime-pale);
+    width: 40px;
+    height: 40px;
+    background-color: #E8EC67;
     /* Pale Outer Circle */
     border-radius: 50%;
     display: flex;
@@ -1049,20 +1053,20 @@ img {
 .wm-icon-inner {
     width: 18px;
     height: 18px;
-    background-color: var(--wm-green-dark);
+    /* background-color: var(--wm-green-dark); */
     /* Dark Inner Circle */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 10px;
     /* Checkmark size */
     font-weight: bold;
 }
 
 .wm-path-item span {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     font-weight: 600;
     line-height: 1.5;
     color: var(--wm-text-head);
@@ -1391,7 +1395,7 @@ img {
 
 /* --- The CTA Card --- */
 .wm-cta-card {
-    background-color: var(--wm-cta-bg);
+    background-color: #E8EC67;
     border-radius: 24px;
     padding: 40px;
     text-align: center;
@@ -1429,7 +1433,7 @@ img {
 /* Primary Button (Solid Green) */
 .wm-btn-primary {
     background-color: var(--wm-green-dark);
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none;
     padding: 14px 32px;
     border-radius: 6px;
@@ -1437,7 +1441,7 @@ img {
     font-size: 1rem;
     transition: background-color 0.2s;
     white-space: nowrap;
-    border: none;
+    
     cursor: pointer;
 }
 
@@ -1447,12 +1451,15 @@ img {
 
 /* Secondary Button (Text Link) */
 .wm-btn-text {
-    color: var(--wm-text-head);
+    color: #4a6117 !important;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1rem;
     padding: 10px 10px;
     transition: opacity 0.2s;
+    border: 1px solid #4a6117;
+    border-radius: 8px;
+
 }
 
 .wm-btn-text:hover {

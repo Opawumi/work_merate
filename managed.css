@@ -74,7 +74,7 @@ ul {
 
 /* Left Text Content */
 .hero-content {
-  max-width: 600px;
+  max-width: 800px;
   /* Optional: Center the text vertically within its own box if the image is taller */
   display: flex;
   flex-direction: column;
@@ -115,7 +115,7 @@ ul {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.1;
   font-weight: 800;
   color: #111;
@@ -172,7 +172,7 @@ h1 {
 
 .hero-image-wrapper img {
   /* CHANGE 3: Force image to fill the height and width */
-  width: 100%;
+  width: 97%;
   height: 100%;
   /* CHANGE 4: 'cover' ensures the image crops smartly instead of stretching/distorting */
   object-fit: cover;
@@ -236,7 +236,7 @@ h1 {
 
 /* --- Typography --- */
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 16px;
   letter-spacing: -0.5px;
@@ -244,7 +244,7 @@ h2 {
 
 p {
   color: #666;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -267,9 +267,11 @@ p {
 
 .btn-text-link {
   font-weight: 600;
-  color: #111;
   padding: 14px 20px;
   display: inline-block;
+  border: 1px solid #4A6117;
+  border-radius: 8px;
+  color: #3d5220 !important;
 }
 
 .btn-text-link:hover {
@@ -307,7 +309,7 @@ p {
 .icon-box-lime {
   width: 48px;
   height: 48px;
-  background: var(--color-lime-accent);
+  background: #E8EC67;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -352,7 +354,7 @@ p {
 }
 
 .pathway-text h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -371,14 +373,15 @@ p {
   font-size: 14px;
   font-weight: 500;
   color: #333;
+  line-height: 18px;
 }
 
 .check-circle {
   color: var(--color-dark-green);
-  background: #ebf2af;
+  background: #E8EC67;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,7 +392,7 @@ p {
 
 /* --- Engagement Models (Yellow Cards) --- */
 .card-yellow {
-  background: var(--color-yellow-light);
+  background: #F4F6B9;
   border-radius: 16px;
   padding: 32px;
 }
@@ -403,7 +406,7 @@ p {
 .icon-box-trans {
   width: 48px;
   height: 48px;
-  background: rgba(0, 0, 0, 0.05);
+  background: #E8EC67;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -418,12 +421,29 @@ p {
 }
 
 .bullet-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none !important;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 18px;
   color: #555;
   font-size: 14px;
-  line-height: 1.8;
-  margin-top: 16px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4A6117;
+  /* Using the theme green for the dots */
+  font-size: 18px;
+  line-height: 1;
+  top: 2px;
 }
 
 /* --- Why Choose Us (White Cards) --- */
@@ -463,7 +483,7 @@ p {
 
 /* --- CTA Banner --- */
 .cta-banner {
-  background: var(--color-yellow-cta);
+  background: #E8EC67;
   border-radius: 24px;
   padding: 80px 40px;
   text-align: center;

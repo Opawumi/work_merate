@@ -316,7 +316,7 @@ button {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 50px;
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: -1.5px;
@@ -328,7 +328,7 @@ h1 {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
-    max-width: 620px;
+    max-width: 730px;
     margin-bottom: 40px;
 }
 
@@ -431,12 +431,12 @@ h1 {
 
 .section-header {
     text-align: center;
-    max-width: 700px;
+    max-width: 1050px;
     margin: 0 auto 60px;
 }
 
 .section-header h2 {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     color: #111;
     margin-bottom: 16px;
@@ -476,7 +476,7 @@ h1 {
 .icon-box {
     width: 48px;
     height: 48px;
-    background-color: #EBF2AF;
+    background-color: #E8EC67;
     /* Yellow/Green Accent */
     border-radius: 8px;
     display: flex;
@@ -515,7 +515,7 @@ h1 {
 .pathway-row {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     margin-bottom: 80px;
 }
 
@@ -525,6 +525,7 @@ h1 {
 
 .pathway-content {
     flex: 1;
+    width: 800px;
 }
 
 .pathway-image {
@@ -532,7 +533,7 @@ h1 {
 }
 
 .pathway-image img {
-    width: 100%;
+    width: 97%;
     height: auto;
     border-radius: 12px;
     display: block;
@@ -540,7 +541,7 @@ h1 {
 }
 
 .pathway-content h3 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     color: #111;
     margin-bottom: 16px;
@@ -548,7 +549,7 @@ h1 {
 }
 
 .pathway-desc {
-    font-size: 16px;
+    font-size: 14.5px;
     line-height: 1.6;
     color: #444;
     margin-bottom: 32px;
@@ -570,9 +571,9 @@ h1 {
 }
 
 .check-icon {
-    min-width: 24px;
-    height: 24px;
-    background-color: #EBF2AF;
+    min-width: 44px;
+    height: 44px;
+    background-color: #E8EC67;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -597,7 +598,7 @@ h1 {
     display: inline-block;
     background-color: #4F6F2F;
     /* Dark Green */
-    color: #fff;
+    color: #fff !important;
     font-weight: 600;
     padding: 14px 28px;
     border-radius: 6px;
@@ -682,7 +683,7 @@ h1 {
 
 /* Yellow Card Styling */
 .expertise-card {
-    background-color: #F8FADB;
+    background-color: #F4F6B9;
     /* The specific light yellow pastel color */
     border-radius: 16px;
     padding: 32px;
@@ -701,7 +702,7 @@ h1 {
 .sector-icon {
     width: 48px;
     height: 48px;
-    background-color: rgba(235, 242, 175, 0.6);
+    background-color: #E8EC67;
     /* Slightly darker yellow/green accent */
     border: 1px solid #EBF2AF;
     border-radius: 8px;
@@ -956,7 +957,7 @@ h1 {
 
 .cta-card {
     /* The specific bright pastel yellow from the image */
-    background-color: #EFF69E;
+    background-color: #E8EC67;
     border-radius: 24px;
     padding: 80px 24px;
     text-align: center;
@@ -981,7 +982,7 @@ h1 {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    max-width: 600px;
+    max-width: 650px;
     margin-bottom: 32px;
 }
 
@@ -995,7 +996,7 @@ h1 {
 .cta-actions .btn-primary {
     background-color: #4A6326;
     /* Dark Olive */
-    color: #fff;
+    color: #fff !important;
     padding: 14px 28px;
     border-radius: 6px;
     font-weight: 600;
@@ -1009,12 +1010,14 @@ h1 {
 
 /* Text Link Button */
 .cta-actions .btn-link {
-    color: #111;
+    color: #4A6326 !important;
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
-    padding: 14px 10px;
+    padding: 14px 30px;
     /* Slight padding for hit area */
+    border: 1px solid #4A6326;
+    border-radius: 8px;
 }
 
 .cta-actions .btn-link:hover {
