@@ -611,26 +611,23 @@ img {
     padding: 24px 0 15px 0;
   }
 
-  /* .hero-agentic {
+  .hero-agentic {
   position: relative;
-  background: url("./assets/hero-Agentic-mobile.png") center center / cover no-repeat;
+  background: url("./assets/Hero-mob.png") center center / cover no-repeat;
   padding: 0;
   overflow: hidden;
   color: #fff;
   min-height: auto;
   display: flex;
   align-items: stretch;
-} */
-  .hero-agentic {
-    min-height: auto;
-  }
+}
 
-  /* .hero-tech-bg {
+  .hero-tech-bg {
   position: absolute;
   inset: 0;
   background: linear-gradient(221deg, rgba(154, 160, 142, 0) 2.33%, #4A6117 55.97%, #4A6117 24.89%);
   pointer-events: none;
-} */
+}
   .hero-buttons {
     display: flex !important;
     flex-direction: column;

@@ -17,7 +17,7 @@
     /* Subtle separator */
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 .wm-nav-container {
@@ -334,11 +334,16 @@
 
 .wm-crumb-current {
     color: var(--wm-text-body);
+    font-weight: 600;
 }
-
+.wm-crumb-link {
+    color: var(--wm-text-body);
+   
+    font-weight: 600;
+}
 /* Typography */
 .wm-audit-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.1;
     font-weight: 800;
     color: var(--wm-text-dark);
@@ -347,7 +352,7 @@
 }
 
 .wm-audit-desc {
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: var(--wm-text-body);
     margin: 0 0 40px 0;
@@ -1380,7 +1385,7 @@ img {
     align-items: center;
     justify-content: center;
     background-color: var(--wm-green-dark);
-    color: white;
+    color: white !important;
     padding: 12px 28px;
     border-radius: 6px;
     font-weight: 600;

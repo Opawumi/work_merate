@@ -175,20 +175,21 @@ body {
 
 .tax-problem-item {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.65rem;
   align-items: flex-start;
 }
 
 /* Icon badges */
 .tax-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
   flex-shrink: 0;
+  margin-top: 20px;
 }
 
 .tax-icon.yellow {
@@ -229,7 +230,7 @@ body {
 
 /* Content section */
 .automation-content h2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #1a1a1a;
@@ -237,10 +238,11 @@ body {
 }
 
 .automation-intro {
-  font-size: 0.95rem;
-  color: #666;
+  font-size: 0.83rem;
+  color: #000000;
   margin-bottom: 2rem;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 /* Features grid */
@@ -272,7 +274,7 @@ body {
 }
 
 .feature-icon.green {
-  background: #4a6741;
+  background: #4A6117;
 }
 
 .automation-feature-item p {
@@ -287,7 +289,7 @@ body {
 .btn-automation {
   display: inline-block;
   padding: 0.875rem 2rem;
-  background: #4a6741;
+  background: #4A6117;
   color: #ffffff !important;
   text-decoration: none;
   border-radius: 6px;
@@ -339,12 +341,13 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  margin-bottom: 50px;
 }
 
 /* Individual card */
 .platform-card {
-  background: #fff9e6;
-  padding: 2rem;
+  background: #F4F6B9;
+  padding: 1.8rem;
   border-radius: 8px;
   transition:
     transform 0.3s ease,
@@ -396,7 +399,6 @@ body {
   background: url("./assets/services-stroke.png") no-repeat bottom;
   background-size: cover;
   position: relative;
-  overflow: hidden;
 }
 
 /* Decorative background element */
@@ -427,7 +429,7 @@ body {
 
 /* Content section (left side) */
 .tax-engines-content h2 {
-  font-size: 2.25rem;
+  font-size: 2 rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #1a1a1a;
@@ -455,15 +457,34 @@ body {
 }
 
 .btn-expert:hover {
-  background: #3a5234;
+  background: #4A6117;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(74, 103, 65, 0.3);
 }
 
-/* Tax engine cards container */
+/* Tax engine cards container — scrollable panel */
 .tax-engines-cards {
   position: relative;
-  min-height: 450px;
+  height: 450px;
+  overflow-y: scroll;
+  overflow-x: visible;
+  scroll-behavior: smooth;
+  /* hide scrollbar visually but keep scroll functionality */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+}
+
+.tax-engines-cards::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari */
+}
+
+/* Inner scroll track — tall enough to hold all 4 cards */
+.tax-engines-cards-inner {
+  position: relative;
+  height: 820px;
 }
 
 /* Individual engine cards */
@@ -473,10 +494,11 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   position: absolute;
-  width: 280px;
+  width: 250px;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  border: 0.1px solid #bdb8b8;
 }
 
 .engine-card:hover {
@@ -486,21 +508,27 @@ body {
 
 /* Card positioning for diagonal layout */
 .engine-card.card-1 {
-  top: 0;
-  right: -30px;
+  top: 30px;
+  right: 0px;
   z-index: 3;
 }
 
 .engine-card.card-2 {
-  top: 120px;
+  top: 190px;
   left: 0;
   z-index: 2;
 }
 
 .engine-card.card-3 {
-  bottom: -50px;
-  right: -30px;
-  z-index: 1;
+  top: 340px;
+  right: 0px;
+  z-index: 3;
+}
+
+.engine-card.card-4 {
+  top: 480px;
+  left: 0;
+  z-index: 2;
 }
 
 /* Card icon */
@@ -553,7 +581,7 @@ body {
 }
 
 .implementation-header h2 {
-  font-size: 2.25rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 0.75rem;
@@ -610,7 +638,7 @@ body {
 }
 
 .step-icon.green {
-  background: #4a6741;
+  background: #4A6117;
   color: #ffffff;
 }
 
@@ -638,7 +666,7 @@ body {
 /* Measurable Business Impact Section */
 .business-impact {
   padding: 5rem 0;
-  background: #ede8e0;
+  background: #EDEFE8;
 }
 
 /* Header section */
@@ -648,7 +676,7 @@ body {
 }
 
 .impact-header h2 {
-  font-size: 2.25rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 0.75rem;
@@ -804,7 +832,7 @@ body {
 }
 
 .ind-sol-bg-yellow {
-  background-color: var(--is-bg-yellow);
+  background-color: #E8EC67;
 }
 
 .ind-sol-bg-green {
@@ -861,14 +889,15 @@ body {
 
 /* Main Yellow Card */
 .cta-sec-card {
-  background-color: var(--cta-bg-yellow);
+  background-color: #E8EC67;
   border-radius: 24px;
-  padding: 80px 24px;
+  padding: 50px 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* Heading */
@@ -884,14 +913,14 @@ body {
 .cta-sec-subtitle {
   font-size: 1.05rem;
   color: var(--cta-text-body);
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 0 32px 0;
   line-height: 1.5;
 }
 
 /* Button Styling */
 .cta-sec-button {
-  background-color: var(--cta-btn-color);
+  background-color: #4A6117;
   color: var(--cta-btn-text);
   border: none;
   padding: 14px 32px;
