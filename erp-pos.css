@@ -602,6 +602,12 @@ img {
   color: #333;
 }
 
+.wm-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
 .wm-btn-primary {
   padding: 14px 32px;
   border-radius: 8px;
@@ -948,9 +954,362 @@ img {
 }
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
-@media (max-width: 900px) {
 
-  /* Nav */
+/* Tablet breakpoint */
+@media (max-width: 968px) {
+
+  /* Hero */
+  .wm-hero {
+    padding: 40px 0;
+  }
+
+  .wm-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .wm-hero-content h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .wm-hero-content p {
+    max-width: 100%;
+  }
+
+  .wm-hero-grid>img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* What We Do cards */
+  .wm-cards-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* Steps */
+  .wm-steps-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  /* Benefits */
+  .wm-benefits-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* Intro grid */
+  .wm-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Pathway rows */
+  .wm-pathway-row,
+  .wm-pathway-row.reverse,
+  .wm-pathway-row.wm-reverse {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .wm-pathway-image {
+    width: 100%;
+  }
+
+  .wm-pathway-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* Feature grids */
+  .wm-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .intro-features {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .feature-text {
+    width: auto;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 640px) {
+
+  /* Hero */
+  .wm-hero {
+    padding: 24px 0 32px;
+  }
+
+  .wm-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .wm-breadcrumbs {
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+  }
+
+  .wm-breadcrumbs span:not(.svg-container) {
+    font-size: 13px;
+  }
+
+  .wm-hero-content h1 {
+    font-size: 1.55rem;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .wm-hero-content p {
+    font-size: 0.82rem;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .wm-hero-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .wm-hero-actions .wm-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .wm-hero-actions .wm-btn-text {
+    padding: 10px 16px;
+  }
+
+  .wm-hero-grid>img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Section spacing */
+  .wm-section {
+    padding: 32px 0;
+  }
+
+  .wm-center-header {
+    margin-bottom: 32px;
+  }
+
+  .wm-center-header h2 {
+    font-size: 1.45rem;
+  }
+
+  .wm-center-header p {
+    font-size: 0.9rem;
+  }
+
+  /* What We Do cards */
+  .wm-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .wm-card {
+    padding: 20px;
+  }
+
+  /* Pathways section */
+  .wm-pathways-section {
+    padding: 32px 0;
+  }
+
+  .wm-pathways-section::before {
+    top: -60px;
+    height: 60px;
+  }
+
+  .wm-pathways-header h2 {
+    font-size: 1.4rem;
+  }
+
+  /* Intro grid */
+  .wm-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .intro-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .intro-card p {
+    font-size: 0.88rem;
+  }
+
+  .intro-features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .feature-text {
+    width: auto;
+  }
+
+  .intro-card .wm-btn-primary {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    align-self: stretch !important;
+  }
+
+  .intro-image-wrapper {
+    border-radius: 10px;
+  }
+
+  /* Pathway rows */
+  .wm-pathway-row,
+  .wm-pathway-row.reverse,
+  .wm-pathway-row.wm-reverse {
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px auto;
+    padding-bottom: 0;
+  }
+
+  .wm-pathway-row.wm-reverse {
+    padding-bottom: 0;
+  }
+
+  .wm-pathway-image {
+    width: 100%;
+  }
+
+  .wm-pathway-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .wm-pathway-text h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    line-height: 1.3;
+  }
+
+  .wm-pathway-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .wm-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .wm-feature-item span {
+    font-size: 13.5px;
+  }
+
+  .wm-pathway-text .wm-btn-primary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* Steps row */
+  .wm-steps-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .wm-step-num {
+    font-size: 2.5rem;
+  }
+
+  .wm-step h4 {
+    font-size: 1rem;
+  }
+
+  .wm-step p {
+    font-size: 0.85rem;
+  }
+
+  /* Benefits (Why Choose) */
+  .wm-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .wm-ben-card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .wm-ben-card h4 {
+    font-size: 1rem;
+  }
+
+  .wm-ben-card p {
+    font-size: 0.85rem;
+  }
+
+  /* CTA */
+  .wm-cta-wrapper {
+    padding: 32px 16px !important;
+  }
+
+  .wm-cta-box {
+    padding: 40px 20px;
+    border-radius: 16px;
+  }
+
+  .wm-cta-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .wm-cta-box p {
+    font-size: 0.88rem;
+  }
+
+  .wm-cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .wm-cta-box .wm-btn {
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .cta_bt {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: #4A6117 !important;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  /* Circular check buttons */
+  .circular-check-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Nav (already handled by shared) */
   .wm-menu,
   .wm-nav-actions {
     display: none;
@@ -969,62 +1328,11 @@ img {
     background: #000;
   }
 
-  /* Mobile Menu Logic */
-  .wm-mobile-menu-check:checked~.wm-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    top: var(--wm-nav-height);
-    left: 0;
-    width: 100%;
-    background: #fff;
-    padding: 20px;
-    border-bottom: 1px solid #eee;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Hero */
-  .wm-hero-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .wm-hero-content {
-    text-align: left;
-  }
-
-  .wm-hero-img-wrapper {
-    order: -1;
-    margin-bottom: 20px;
-  }
-
-  /* Image on top on mobile? Standard is bottom, but usually image top is better for visuals */
-  .wm-hero-img-wrapper {
-    order: 1;
-  }
-
-  /* Actually, stick to bottom like design usually dictates */
-
-  /* Grids */
-  .wm-cards-grid,
-  .wm-steps-row,
-  .wm-benefits-grid,
+  /* Footer */
   .wm-foot-top {
     grid-template-columns: 1fr;
   }
 
-  /* Integration Rows */
-  .wm-pathway-row,
-  .wm-pathway-row.reverse {
-    flex-direction: column;
-    gap: 50px;
-  }
-
-  .wm-img-placeholder {
-    height: 200px;
-  }
-
-  /* Footer */
   .wm-foot-bottom,
   .wm-newsletter {
     flex-direction: column;
@@ -1037,12 +1345,20 @@ img {
     flex-direction: column;
   }
 
-  .wm-news-input input {
-    width: 100%;
-  }
-
+  .wm-news-input input,
   .wm-news-input button {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .wm-hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .wm-center-header h2,
+  .wm-pathways-header h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -1064,10 +1380,10 @@ img {
 }
 
 .wm-cta-wrapper {
-  padding: 80px ;
+  padding: 80px;
 }
 
-.cta_bt{
+.cta_bt {
   margin-left: 20px;
   background-color: #E8EC67;
   border: 1px solid #333;

@@ -1,49 +1,50 @@
 /* --- Reset & Variables --- */
 :root {
-  --font-family: "Inter", sans-serif;
-  --color-text-main: #111;
-  --color-text-light: #555;
-  --color-dark-green: #4f6f2f;
-  --color-agentic-green: #4a6117;
-  --color-lime-bg: #ebf2af;
-  --color-cream-bg: #f0f2eb;
-  --color-yellow-cta: #f0f4a4;
-  --color-border: #e0e0e0;
+    --font-family: "Inter", sans-serif;
+    --color-text-main: #111;
+    --color-text-light: #555;
+    --color-dark-green: #4f6f2f;
+    --color-agentic-green: #4a6117;
+    --color-lime-bg: #ebf2af;
+    --color-cream-bg: #f0f2eb;
+    --color-yellow-cta: #f0f4a4;
+    --color-border: #e0e0e0;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-family);
-  color: var(--color-text-main);
-  background: #fff;
-  line-height: 1.5;
-  overflow-x: hidden;
+    font-family: var(--font-family);
+    color: var(--color-text-main);
+    background: #fff;
+    line-height: 1.5;
+    overflow-x: hidden;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 img {
-  /* max-width: 100%; */
-  display: block;
+    /* max-width: 100%; */
+    display: block;
 }
 
 /* --- Navigation Styles --- */
-.wm-crumb-link{
-font-size: 14px;
+.wm-crumb-link {
+    font-size: 14px;
 
 }
+
 .wm-nav-wrapper {
     /* Variables */
     --wm-nav-height: 80px;
@@ -393,13 +394,21 @@ font-size: 14px;
 
     .wm-hero-btns {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 16px;
+        width: 100%;
     }
 
     .wm-btn-primary {
-        width: max-content;
+        width: 100%;
         text-align: center;
+        box-sizing: border-box;
+    }
+
+    .wm-btn-text {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
 }
 
@@ -538,9 +547,13 @@ font-size: 14px;
 
     .wm-img-col {
         width: 100%;
-        height: 350px;
-        /* Fixed height for mobile */
+        height: auto;
+        /* Natural height for mobile */
         min-height: auto;
+    }
+
+    .wm-img-col img {
+        height: auto;
     }
 
     .wm-reactive-title {
@@ -893,8 +906,8 @@ font-size: 14px;
        Let's fix Row 2 to standard Text-Top for mobile.
     */
     .wm-path-row.wm-row-reverse {
-        flex-direction: column-reverse;
-        /* Image Top, Text Bottom */
+        flex-direction: column;
+        /* Text Top, Image Bottom */
     }
 
     .wm-path-img {
@@ -1099,22 +1112,34 @@ font-size: 14px;
         gap: 40px;
     }
 
-    /* On mobile, usually you want Image on Top or Text on Top consistently. 
-       Use column-reverse if you want Image on top for the reversed rows */
+    /* On mobile, usually you want Image on Top or Text on Top consistently. */
     .wm-path-row.wm-row-reverse {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .wm-path-img {
         width: 100%;
-        height: 300px;
-        /* Fixed height for mobile */
+        height: auto;
+        /* Natural height for mobile */
         min-height: auto;
+    }
+
+    .wm-path-img img {
+        width: 100%;
+        height: auto;
     }
 
     .wm-path-features {
         grid-template-columns: 1fr;
         /* Single column bullets on mobile */
+    }
+}
+
+@media (max-width: 600px) {
+    .wm-btn-path {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
 }
 
@@ -1288,7 +1313,7 @@ font-size: 14px;
 }
 
 .wm-standout-header p {
-    font-size: 1.05rem;
+    font-size: 0.85rem;
     color: var(--wm-text-body);
 }
 
@@ -1367,7 +1392,7 @@ font-size: 14px;
     }
 
     .wm-standout-header h2 {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -1441,7 +1466,7 @@ font-size: 14px;
     font-size: 1rem;
     transition: background-color 0.2s;
     white-space: nowrap;
-    
+
     cursor: pointer;
 }
 
@@ -1474,11 +1499,11 @@ font-size: 14px;
     }
 
     .wm-cta-card h2 {
-        font-size: 1.75rem;
+        font-size: 1.55rem;
     }
 
     .wm-cta-card p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .wm-cta-actions {
@@ -1489,6 +1514,12 @@ font-size: 14px;
     }
 
     .wm-btn-primary {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .wm-btn-text {
         width: 100%;
         text-align: center;
         box-sizing: border-box;

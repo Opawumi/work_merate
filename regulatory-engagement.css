@@ -394,7 +394,7 @@ h1 {
 @media (max-width: 600px) {
 
     h1 {
-        font-size: 32px;
+        font-size: 28px;
         letter-spacing: -0.5px;
     }
 
@@ -415,11 +415,7 @@ h1 {
         width: 100%;
         text-align: center;
         padding: 14px 20px;
-    }
-
-    .text-btn {
-        padding-left: 0;
-        text-align: left;
+        box-sizing: border-box;
     }
 }
 
@@ -625,6 +621,12 @@ h1 {
         gap: 40px;
     }
 
+    .pathway-content,
+    .pathway-image {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .reverse-layout {
         flex-direction: column-reverse;
         /* Keep text on top for Row 2 if desired, or standard column to have image first */
@@ -664,6 +666,12 @@ h1 {
 
     .pathway-content h3 {
         font-size: 20px;
+    }
+
+    .btn-dark {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
 }
 
@@ -1045,6 +1053,12 @@ h1 {
     .cta-actions .btn-link {
         width: 100%;
         text-align: center;
+        box-sizing: border-box;
+    }
+
+    .cta-actions .btn-link {
+        border: none;
+        padding: 14px 20px;
     }
 }
 

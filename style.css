@@ -1092,10 +1092,6 @@ h6 {
     width: auto;
 }
 
-.year {
-    display: flex;
-    gap: 10px;
-}
 
 /* ============================================
    Floating Chatbot

@@ -513,3 +513,118 @@ p {
 /* Removed: Footer styling and mobile queries are now handled securely by shared-nav-footer.css */
 
 /* Removed styling for hamburger and mobile-menu handled by shared-nav-footer.css */
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 0 60px;
+  }
+
+  .hero-container {
+    gap: 24px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    line-height: 32px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 16px 20px;
+  }
+
+  .section-padding {
+    padding: 40px 0;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pathway-row {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .pathway-row.reverse {
+    flex-direction: column-reverse;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .check-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pathway-text .btn-dark {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .pathway-img img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .cta-banner {
+    padding: 40px 20px;
+    border-radius: 16px;
+  }
+
+  .cta-banner h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .cta-banner p {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .cta-actions .btn-dark,
+  .cta-actions .btn-text-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .cta-actions .btn-text-link {
+    border: none;
+    padding: 14px 0;
+  }
+}
